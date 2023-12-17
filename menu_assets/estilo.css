@@ -1,0 +1,19 @@
+@charset "utf-8";
+/* CSS Document */
+
+#cabecera{
+	width:800px;
+	height:80px;
+	background-color:#0066CC;
+	margin:auto;
+	display:block;
+	border-radius:20px;
+	padding:20px;
+	}
+	
+h1,h2{
+	margin:auto;
+	padding:0px;
+	color:#FFF;
+	
+	}
