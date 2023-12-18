@@ -23,13 +23,13 @@
                 </a>
                 <label for="txtusuario" class="labels">Usuario</label>
                 <br>
-                <input type="text" id="txtusuario" name="txtusuario" class="input">
+                <input type="text" id="txtusuario" name="txtusuario" class="input" maxlength="30" minlength="3">
                 <br>
                 <label for="txtpassword" class="labels">Contraseña</label>
                 <br>
                 <input type="password" id="txtpassword" name="txtpassword" class="input">
                 <br>
-                <input type="submit" value="Iniciar Sesión" class="btn">
+                <input type="submit" value="Iniciar Sesión" class="btn" maxlength="30" minlength="3">
                 <br>
                 <br>
                 <a class="hiper" href="registro.php">¿No tienes una cuenta? ¡Regístrate!</a>
