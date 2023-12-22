@@ -19,7 +19,8 @@
 	</script>
 </head>
 <body>
-	<h1><center>Seleccione su objetivo estrategico</center></h1>
+	<h1><center>Aqui tiene todas la matriz del PER Lima-Provincias, con sus medidas</center></h1>
+	<h3><center>Seleccione su objetivo estrategico</center></h1>
 
 <table align="center">
 	<tr>
@@ -32,11 +33,12 @@
 	</tr>
 </table>
 <br>
-	
-	<!-- A un falta editar las tablas, Falta 3 y 4 -->
 
 	<!-- Tabla 1 -->
 	<table border="1" id="1">
+		<tr>
+			<th colspan="4">OBJETIVO Nº 01:<br>Asegurar una educación de calidad con equidad, innovadora, sin exclusión social que desarrolle plenamente las capacidades del estudiante con la participación activa y comprometida del docente y la sociedad.</th>
+		</tr>
 		<tr>
 			<th>OBJETIVOS (APROBADO EN HUAROCHIRÍ) 29-01-2009</th>
 			<th>RESULTADOS (APROBADO EN CHANCAY) 27-02-2009</th>
@@ -132,6 +134,9 @@
 	<!-- Tabla 2 -->
 	<table border="1" id=2>
 		<tr>
+			<th colspan="4">OBJETIVO Nº 02:<br>Garantizar una formación ciudadana crítica, creativa, autónoma, emprendedora y propositiva, que permita la realización individual y social a partir del desarrollo integral del estudiante con una sólida identidad local, regional y nacional.</th>
+		</tr>
+		<tr>
 			<th>OBJETIVOS (APROBADO EN HUAROCHIRÍ) 29-01-2009</th>
 			<th>RESULTADOS (APROBADO EN CHANCAY) 27-02-2009</th>
 			<th>POLÍTICAS EDUCATIVAS (APROBADO EN BARRANCA) 26-03-2009</th>
@@ -200,81 +205,8 @@
 	<!-- Tabla 3 -->
 	<table border="1" id=3>
 		<tr>
-			<th>OBJETIVOS (APROBADO EN HUAROCHIRÍ) 29-01-2009</th>
-			<th>RESULTADOS (APROBADO EN CHANCAY) 27-02-2009</th>
-			<th>POLÍTICAS EDUCATIVAS (APROBADO EN BARRANCA) 26-03-2009</th>
-			<th>MEDIDAS (APROBADO EN SANTA MARÍA) 25-09-2009</th>
+			<th colspan="4">OBJETIVO Nº 03:<br>Lograr ciudadanos con principios éticos, conductas morales y estéticos en relación con los demás y su desarrollo humano.</th>
 		</tr>
-	<tr>
-		<td></td>
-		<td></td>
-		<td></td>
-		<td></td>
-	</tr>
-	<tr>
-		<td></td>
-		<td></td>
-		<td></td>
-		<td></td>
-	</tr>
-	<tr>
-		<td></td>
-		<td></td>
-		<td></td>
-		<td></td>
-	</tr>
-	<tr>
-		<td></td>
-		<td></td>
-		<td></td>
-		<td></td>
-	</tr>
-	<tr>
-		<td></td>
-		<td></td>
-		<td></td>
-		<td></td>
-	</tr>
-	<tr>
-		<td></td>
-		<td></td>
-		<td></td>
-		<td></td>
-	</tr>
-	<tr>
-		<td></td>
-		<td></td>
-		<td></td>
-		<td></td>
-	</tr>
-	<tr>
-		<td></td>
-		<td></td>
-		<td></td>
-		<td></td>
-	</tr>
-	<tr>
-		<td></td>
-		<td></td>
-		<td></td>
-		<td></td>
-	</tr>
-	<tr>
-		<td></td>
-		<td></td>
-		<td></td>
-		<td></td>
-	</tr>
-	<tr>
-		<td></td>
-		<td></td>
-		<td></td>
-		<td></td>
-	</tr>
-</table>
-
-	<!-- Tabla 4 -->
-	<table border="1" id=4>
 		<tr>
 			<th>OBJETIVOS (APROBADO EN HUAROCHIRÍ) 29-01-2009</th>
 			<th>RESULTADOS (APROBADO EN CHANCAY) 27-02-2009</th>
@@ -282,93 +214,114 @@
 			<th>MEDIDAS (APROBADO EN SANTA MARÍA) 25-09-2009</th>
 		</tr>
 	<tr>
-		<td></td>
-		<td></td>
-		<td></td>
-		<td></td>
+		<td rowspan="11">3. Lograr ciudadanos con principios éticos, conductas morales y estéticos en relación con los demás y su desarrollo humano.</td>
+		<td rowspan="11">3.1. comunidad educativa transparente con ética y práctica de valores promoviendo para desarrollar una cultura de paz.</td>
+		<td rowspan="3">17. fomentar estrategias participativas con la familia y comunidad para garantizar la formación de ciudadanos con valores desde la infancia.</td>
+		<td>1. aplicar estrategias integradas que incorporen la conciencia, el reconocimiento y análisis de las necesidades para modificar actitudes, valores y prácticas de crianza.</td>
 	</tr>
 	<tr>
-		<td></td>
-		<td></td>
-		<td></td>
-		<td></td>
+		<td>2. Vincular la educación a padres y madres para el cuidado y formación inicial de los niños.</td>
 	</tr>
 	<tr>
-		<td></td>
-		<td></td>
-		<td></td>
-		<td></td>
+		<td>3. definir el rol y la responsabilidad del gobierno regional y local y de la sociedad civil para estimular una mayor participación social en la formulación de estrategias.</td>
 	</tr>
 	<tr>
-		<td></td>
-		<td></td>
-		<td></td>
-		<td></td>
+		<td rowspan="4">18. garantizar la práctica de valores éticos, morales y estéticos en las instituciones educativas desde la infancia y a lo largo del proceso educativo.</td>
+		<td>1. fortalecer programas sociales para la participación directa y mejoramiento del desempeño ciudadano mediante la práctica de valores escuela - comunidad.</td>
 	</tr>
 	<tr>
-		<td></td>
-		<td></td>
-		<td></td>
-		<td></td>
+		<td>2. Crear e implementar centros de orientación familiar para promocionar la autoformación, autoestima y el autoconcepto.</td>
 	</tr>
 	<tr>
-		<td></td>
-		<td></td>
-		<td></td>
-		<td></td>
+		<td>3. Promocionar en los medios de comunicación acciones cívicas para resaltar la práctica de valores.</td>
 	</tr>
 	<tr>
-		<td></td>
-		<td></td>
-		<td></td>
-		<td></td>
+		<td>4. promoción de la función educativa, informativa y cultural de los principales actores educativos en los medios de comunicación.</td>
 	</tr>
 	<tr>
-		<td></td>
-		<td></td>
-		<td></td>
-		<td></td>
+		<td rowspan="2">19. garantizar un sistema educativo local y regional con práctica de valores y transparencia en la función publica.</td>
+		<td>1. Fomentar y difundir la ética profesional y la función del desarrollo social de la administración pública en el marco de una cultura de paz.</td>
 	</tr>
 	<tr>
-		<td></td>
-		<td></td>
-		<td></td>
-		<td></td>
+		<td>2. Acceso de la sociedad civil en la transparencia de la rendición de cuentas e información de gestión pública en las instancias descentralizadas regional, ugel e instituciones educativas.</td>
 	</tr>
 	<tr>
-		<td></td>
-		<td></td>
-		<td></td>
-		<td></td>
+		<td rowspan="2">20. fortalecer la identidad de la persona como agente de cambio en la sociedad, basada en valores éticos y morales.</td>
+		<td>1. promover la participación de los actores educativos y la sociedad civil en la identidad de la persona como agente de cambio y práctica permanente de valores éticos y morales.</td>
 	</tr>
 	<tr>
-		<td></td>
-		<td></td>
-		<td></td>
-		<td></td>
+		<td>2. Establecer relaciones multisectoriales para promover la práctica de valores.</td>
+	</tr>
+</table>
+
+	<!-- Tabla 4 -->
+	<table border="1" id=4>
+		<tr>
+			<th colspan="4">OBJETIVO Nº 04:<br>Desarrollar en las instancias educativas una gestión descentralizada, eficaz, proactiva, democrática y productiva que los prepare a afrontar con éxito las demandas de su entorno social y natural.</th>
+		</tr>
+		<tr>
+			<th>OBJETIVOS (APROBADO EN HUAROCHIRÍ) 29-01-2009</th>
+			<th>RESULTADOS (APROBADO EN CHANCAY) 27-02-2009</th>
+			<th>POLÍTICAS EDUCATIVAS (APROBADO EN BARRANCA) 26-03-2009</th>
+			<th>MEDIDAS (APROBADO EN SANTA MARÍA) 25-09-2009</th>
+		</tr>
+	<tr>
+		<td rowspan="14">4. Desarrollar en las instancias educativas una gestión descentralizada, eficaz, proactiva, democrática y productiva que los prepare a afrontar con éxito las demandas de su entorno social y natural</td>
+		<td rowspan="7">4.1 Gestión por resultados descentralizada, democrática, transparente e innovadora</td>
+		<td rowspan="3">21. Fortalecer las capacidades de organización institucional y gestión de recursos en las instancias de gestión para un manejo adecuado, ético y eficaz con rendición de cuentas oportunas dentro de una cultura innovadora, transparente y moralizadora.</td>
+		<td>1. Fortalecimiento de los órganos de concertación, participación y vigilancia de las instancias de gestión educativa.</td>
 	</tr>
 	<tr>
-		<td></td>
-		<td></td>
-		<td></td>
-		<td></td>
+		<td>2. Garantizar la formación permanente en gestión, dirección y liderazgo para los especialistas de las unidades ejecutoras y directores de educación básica y técnico productiva.</td>
 	</tr>
 	<tr>
-		<td></td>
-		<td></td>
-		<td></td>
-		<td></td>
+		<td>3. Emisión y difusión de guías metodológicas para que las instancias de gestión garanticen la rendición de cuentas oportunas, innovadoras, transparentes y moralizadoras a la comunidad educativa.</td>
 	</tr>
 	<tr>
-		<td></td>
-		<td></td>
-		<td></td>
-		<td></td>
+		<td rowspan="4">22. Implementar modelos descentralizados, eficaces y eficientes de gestión por resultados para las instancias de gestión educativa, priorizando las áreas de población vulnerable: rurales, urbano marginales y de extrema pobreza.</td>
+		<td>1. Diseñar modelos descentralizados de gestión a través de incentivos y estímulos para la participación democrática e innovadora de los actores de las instancias de gestión, incluyendo las alianzas estratégicas.</td>
+	</tr>
+	<tr>
+		<td>2. Fortalecimiento y expansión de los programas estratégicos, logros de aprendizaje hasta finalizar educación básica regular (presupuesto por resultados.</td>
+	</tr>
+	<tr>
+		<td>3. Fortalecimiento de los comités de gestión presupuestaria en las unidades ejecutoras.</td>
+	</tr>
+	<tr>
+		<td>4. Creación y funcionamiento de la unidad formuladora de proyectos educativos en la dirección regional de educación.</td>
+	</tr>
+	<tr>
+		<td rowspan="7">4.2 Una educación financiada y administrada racionalmente con equidad priorizando la población vulnerable.</td>
+		<td rowspan="2">23. Promover mecanismos de movilización social de la ciudadanía en la participación, concertación y vigilancia para el mejoramiento de la calidad educativa y una adecuada gestión de las instancias educativas.</td>
+		<td>1. Desarrollar el trabajo en redes educativas a través de modelos de gestión que generen instituciones educativas exitosas en educación básica y técnico productiva para promover el desarrollo humano.</td>
+	</tr>
+	<tr>
+		<td>2. Fortalecer los órganos de participación, concertación y vigilancia (copare, copale, conei).</td>
+	</tr>
+	<tr>
+		<td rowspan="2">24. Aplicar la simplificación administrativa y las normas legales de control como estrategia para la lucha contra la corrupción.</td>
+		<td>1. Creación de paginas web, desarrollando un programa de rendición de cuentas, una cultura de control y sistematización informática: sistema de administración financiera (siaf), sistema de integrado de gestión administrativa (siga), sistema de racionalización (sira), sistema único de planillas (sup), sistema automatizado de gestión en la institución educativa (siage) y codificación de plazas (nexus).</td>
+	</tr>
+	<tr>
+		<td>2. Implementación del inventario de procedimientos administrativos de mayor uso para su simplificación en el ámbito regional.</td>
+	</tr>
+	<tr>
+		<td rowspan="3">25. garantizar el financiamiento para una educación de calidad y equidad con resultados.</td>
+		<td>1. Gestionar el incremento del presupuesto y financiamiento para lograr una educación de calidad y equidad con resultados.</td>
+	</tr>
+	<tr>
+		<td>2. Incorporar acciones y proyectos en los presupuestos participativos locales y regional.</td>
+	</tr>
+	<tr>
+		<td>3. Coordinar para implementar acciones de responsabilidad social de las empresas privadas y otras instituciones.</td>
 	</tr>
 </table>
 
 	<!-- Tabla 5 -->
 	<table border="1" id=5>
+		<tr>
+			<th colspan="4">OBJETIVO Nº 05:<br>Lograr ciudadanos que demuestren en la práctica la valoración, el respeto a la biodiversidad y medio ambiente como parte del ecosistema en que vivimos.</th>
+		</tr>
 		<tr>
 			<th>OBJETIVOS (APROBADO EN HUAROCHIRÍ) 29-01-2009</th>
 			<th>RESULTADOS (APROBADO EN CHANCAY) 27-02-2009</th>
@@ -405,6 +358,9 @@
 
 	<!-- Tabla 6 -->
 	<table border="1" id=6>
+		<tr>
+			<th colspan="4">OBJETIVO Nº 06:<br>Asegurar una educación de calidad con equidad, innovadora, sin exclusión social que desarrolle plenamente las capacidades del estudiante con la participación activa y comprometida del docente y la sociedad.</th>
+		</tr>
 		<tr>
 			<th>OBJETIVOS (APROBADO EN HUAROCHIRÍ) 29-01-2009</th>
 			<th>RESULTADOS (APROBADO EN CHANCAY) 27-02-2009</th>
@@ -447,7 +403,7 @@
 	</script>
 
 
-
+<p><a href="https://www.cambiendireccionweb.com/" target="_blank">Para terminar y salir del proceso de validación electrónica del PER, haga clic aquí</a></p>
 
 </body>
 </html>
