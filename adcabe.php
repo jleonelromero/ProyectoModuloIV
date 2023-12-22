@@ -71,7 +71,7 @@
             <div class="animated fadeIn">
                 <!-- Widgets  -->
                 <?php 
-                include 'Include/cabecera.php'?>
+                include 'Include/cabecera2.php'?>
                 <!-- /Widgets -->
               
                 <!--  Traffic  -->
