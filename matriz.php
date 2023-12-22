@@ -33,7 +33,7 @@
 </table>
 <br>
 	
-	<!-- A un falta editar las tablas, solo esta la 1 -->
+	<!-- A un falta editar las tablas, Falta 3 y 4 -->
 
 	<!-- Tabla 1 -->
 	<table border="1" id="1">
@@ -139,85 +139,61 @@
 		</tr>
 	<tr>
 		<td rowspan="16">2. Garantizar una formación ciudadana crítica, creativa, autónoma, emprendedora y propositiva, que permita la realización individual y social a partir del desarrollo integral del estudiante con una sólida identidad local, regional y nacional</td>
-		<td></td>
-		<td></td>
-		<td></td>
+		<td rowspan="7">2.1 Formación analítica, creativa, autónoma y emprendedora con un diseño curricular diversificado y contextualizado.</td>
+		<td>11. elaborar e implementar lineamientos de política educativa regional.</td>
+		<td>1. Diseño de los lineamientos de política educativa para la diversificación curricular regional.</td>
 	</tr>
 	<tr>
-		<td></td>
-		<td></td>
-		<td></td>
+		<td rowspan="3">12. Fomentar un diseño curricular inclusivo, con enfoque intercultural, bilingüe, diversificado y participativo de acuerdo  al entorno local, regional y de manera participativa.</td>
+		<td>1. desarrollar programas de socialización y sensibilización de la aplicación de los lineamientos de política educativa regional.</td>
 	</tr>
 	<tr>
-		<td></td>
-		<td></td>
-		<td></td>
+		<td>2. fortalecer las redes educativas para lograr en las instituciones educativas la aplicación adecuada del diseño curricular debidamente contextualizado y diversificado.</td>
 	</tr>
 	<tr>
-		<td></td>
-		<td></td>
-		<td></td>
-		<td></td>
+		<td>3. desarrollar programas de capacitación docente para la formulación, aplicación y seguimiento de los diseños curriculares diversificados.</td>
 	</tr>
 	<tr>
-		<td></td>
-		<td></td>
-		<td></td>
+		<td rowspan="3">13. Promoción del desarrollo integral basado en capacidades, actitudes, habilidades, destrezas deportivas y valores de los estudiantes de acuerdo  a la realidad sociocultural, avance de la ciencia y la tecnología, la biodiversidad  y a los ejes de desarrollo local y regional y nacional.</td>
+		<td>1. Difusión a través de los medios de comunicación (televisiva, radial) de la promoción de desarrollo integral de los estudiantes en el marco de la realidad local, regional y nacional.</td>
 	</tr>
 	<tr>
-		<td></td>
-		<td></td>
-		<td></td>
+		<td>2. Creación de espacios educativos culturales y deportivos a través de los recursos del estado y el sector privado y otros.</td>
 	</tr>
 	<tr>
-		<td></td>
-		<td></td>
-		<td></td>
+		<td>3. Propiciar convenios con universidades e institutos para la integración educativa.</td>
 	</tr>
 	<tr>
-		<td></td>
-		<td></td>
-		<td></td>
+		<td rowspan="7">2.2. Ciudadanos líderes y comprometidos con el desarrollo personal y social de la región ejerciendo sus derechos y deberes.</td>
+		<td rowspan="3">14. Impulso  de una manera  creativa y sostenida de una educación en democracia  que favorezca integración, cohesión social y gobernabilidad.</td>
+		<td>1. Formación docente en enfoques y estrategias metodológicas de educación para la democracia.</td>
 	</tr>
 	<tr>
-		<td></td>
-		<td></td>
-		<td></td>
+		<td>2. Propiciar la articulación institucional pública y cívica para el fomento de valores y buenas prácticas ciudadanas.</td>
 	</tr>
 	<tr>
-		<td></td>
-		<td></td>
-		<td></td>
+		<td>3. Insertar en el proceso educativo contenidos para el desarrollo de liderazgo, autoestima y vocación emprendedora.</td>
 	</tr>
 	<tr>
-		<td></td>
-		<td></td>
-		<td></td>
+		<td rowspan="4">15. Creación de espacios y mecanismos de participación de los educandos para fortalecer el ejercicio de los derechos y deberes, identidad e integración local y regional.</td>
+		<td>Fortalecer y crear espacios de participación de los educandos para el ejercicio de sus derechos y deberes (municipios escolares, Conei y otros).</td>
 	</tr>
 	<tr>
-		<td></td>
-		<td></td>
-		<td></td>
+		<td>2. Promover la participación de los educandos en concursos escolares.</td>
 	</tr>
 	<tr>
-		<td></td>
-		<td></td>
-		<td></td>
+		<td>3. Desarrollar, fomentar y difundir el arte y la cultura nacional, regional y local.</td>
 	</tr>
 	<tr>
-		<td></td>
-		<td></td>
-		<td></td>
+		<td>4. Celebrar convenios con instituciones públicas y privadas para fortalecer la participación de los educandos para el ejercicio ciudadano.</td>
 	</tr>
 	<tr>
-		<td></td>
-		<td></td>
-		<td></td>
+		<td rowspan="2">2.3. sociedad promotora de la identidad local y regional.</td>
+		<td rowspan="2">16. Fomentar el turismo, programas y proyectos educativos que reafirmen y consoliden la identidad local y regional, revalorando  las manifestaciones y patrimonio cultural.</td>
+		<td>1. Fomentar redes interinstitucionales locales, provinciales y regional para promover y difundir el turismo y construir la identidad local y regional, revalorando las manifestaciones y patrimonio cultural.</td>
 	</tr>
 	<tr>
-		<td></td>
-		<td></td>
-		<td></td>
+		<td>2. Promover y difundir las potencialidades turísticas y culturales de la region.</td>
 	</tr>
 </table>
 
@@ -400,46 +376,30 @@
 			<th>MEDIDAS (APROBADO EN SANTA MARÍA) 25-09-2009</th>
 		</tr>
 	<tr>
-		<td></td>
-		<td></td>
-		<td></td>
-		<td></td>
+		<td rowspan="7">5. Lograr ciudadanos que demuestren en la práctica la valoración, el respeto a la biodiversidad y medio ambiente como parte del ecosistema en que vivimos.</td>
+		<td rowspan="7">5.1 Ciudadanos responsables que conservan y preservan el medio ambiente y la defensa de la biodiversidad.</td>
+		<td rowspan="4">26. promover permanentemente una conciencia ambiental inculcando un comportamiento adecuado y responsable en el uso de los recursos naturales.</td>
+		<td>1. Creación de espacios especializados como medios de difusión de zonas de alto riesgo de contaminación y deterioro del medio ambiente.</td>
 	</tr>
 	<tr>
-		<td></td>
-		<td></td>
-		<td></td>
-		<td></td>
+		<td>2. Programa de capacitación continua en conservación y defensa del medio ambiente a nivel de alumnos, docentes, población y autoridades.</td>
 	</tr>
 	<tr>
-		<td></td>
-		<td></td>
-		<td></td>
-		<td></td>
+		<td>3. Coordinar con las entidades públicas y privadas para comprometerlos en la difusión y defensa del medio ambiente. </td>
 	</tr>
 	<tr>
-		<td></td>
-		<td></td>
-		<td></td>
-		<td></td>
+		<td>4. Incorporar en los lineamientos de política educativa de diversificación curricular regional que los proyectos curriculares de centro de instituciones educativas consideren capacidades, conocimientos, actitudes y valores de conciencia ambiental y uso responsable de los recursos naturales.</td>
 	</tr>
 	<tr>
-		<td></td>
-		<td></td>
-		<td></td>
-		<td></td>
+		<td rowspan="2">27. conservar, valorar, proteger y respetar los recursos naturales de la región promoviendo con los gobiernos locales y organismos correspondientes la defensa de la biodiversidad.</td>
+		<td>1. Materializar convenios y/o programas estratégicos multisectoriales que involucren centros de investigación ecológica, círculos y/o redes educativas y comunales ambientales, funcionamiento de redes de reciclaje a nivel local e instituciones educativas.</td>
 	</tr>
 	<tr>
-		<td></td>
-		<td></td>
-		<td></td>
-		<td></td>
+		<td>2. Desarrollar programas y proyectos de conservación, valoración, protección de la defensa del medio ambiente y biodiversidad.</td>
 	</tr>
 	<tr>
-		<td></td>
-		<td></td>
-		<td></td>
-		<td></td>
+		<td>28. Promover escuelas ecológicas que desarrollen una educación ambiental.</td>
+		<td>1. Promover e implementar escuelas ecológicas gestoras de proyectos de innovación e investigación para la conservación del medio ambiente.</td>
 	</tr>
 </table>
 
@@ -452,46 +412,32 @@
 			<th>MEDIDAS (APROBADO EN SANTA MARÍA) 25-09-2009</th>
 		</tr>
 	<tr>
-		<td></td>
-		<td></td>
-		<td></td>
-		<td></td>
+		<td rowspan="7">6. Impulsar una educación productiva y empresarial para el desarrollo sostenible de la región</td>
+		<td rowspan="4">6.1 Educación generadora de competencias emprendedoras, productivas y empresariales para el desarrollo local y regional.</td>
+		<td rowspan="2">29. Formar técnicos competentes, desarrollando capacidades laborales en respuesta a las demandas socio-económico-culturales local, regional y nacional</td>
+		<td>1. Contribuir en la elaboración de una currícula de formación técnica con orientación de competencias productivas.</td>
 	</tr>
 	<tr>
-		<td></td>
-		<td></td>
-		<td></td>
-		<td></td>
+		<td>2. Desarrollar programas de capacitación para técnicos de la educación productiva.</td>
 	</tr>
 	<tr>
-		<td></td>
-		<td></td>
-		<td></td>
-		<td></td>
+		<td rowspan="2">30. Educación superior ligada a la formación de estudiantes con visión de generar empresas que permitirán elevar los niveles de vida y reducir la tasa de pobreza en el ámbito de la región lima provincias.</td>
+		<td>1. Promover la formación de estudiantes emprendendores con visión empresarial.</td>
 	</tr>
 	<tr>
-		<td></td>
-		<td></td>
-		<td></td>
-		<td></td>
+		<td>2. Elaborar, gestionar y desarrollar proyectos productivos.</td>
 	</tr>
 	<tr>
-		<td></td>
-		<td></td>
-		<td></td>
-		<td></td>
+		<td rowspan="3">6.2 Instituciones superiores formadoras de profesionales competentes y comprometidos con la investigación e innovación en la ciencia y tecnología.</td>
+		<td rowspan="2">31. Articular las actividades ocupacionales con las instituciones de educación superior no universitarias, incrementando el financiamiento y promoviendo la investigación e innovación.</td>
+		<td>1. Desarrollar pasantías entre instituciones de educación superior no universitarias.</td>
 	</tr>
 	<tr>
-		<td></td>
-		<td></td>
-		<td></td>
-		<td></td>
+		<td>2. Implementar aulas innovadoras para que los educandos investiguen.</td>
 	</tr>
 	<tr>
-		<td></td>
-		<td></td>
-		<td></td>
-		<td></td>
+		<td>32. Priorizar las inversiones en equipamiento de las instituciones educativas con medidas pertinentes.</td>
+		<td>1. Gestionar la emisión de ordenanzas regionales que aprueben la inversión en las instituciones educativas para su equipamiento.</td>
 	</tr>
 </table>
 
