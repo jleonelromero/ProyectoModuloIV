@@ -1,6 +1,6 @@
 <?php
 include("Include/auth.php");
-require_once 'Include/conexion.php';
+include("Include/conexion.php");
 $cod = $_SESSION["usuario"];
 $sqlInstitucion = "SELECT * FROM tbinstitucioneducativa WHERE idInstitucionEducativa = '$cod'";
 $fInst = mysqli_query($cn, $sqlInstitucion);
@@ -25,10 +25,10 @@ if ($rInst) {
 </head>
 
 <body>
-    <div class="container">
-        <?php include("Include/cabecera.php"); ?>
-        <form action="p_actualizar.php" method="post">
-            <?php if ($tabla === "InstitucionEducativa") { ?>
+    <?php include("Include/cabecera.php"); ?>
+    <form action="p_actualizar.php" method="post">
+        <?php if ($tabla === "InstitucionEducativa") { ?>
+            <fieldset id="actualizar">
                 <label>1.- Codigo de la I.E.</label>
                 <input type="text" name="txtcodigo" value="<?php echo $rInst["codInstitucion"]; ?>" required>
                 <label>2.- Nombre de la Institución Educativa (*):</label>
@@ -42,6 +42,8 @@ if ($rInst) {
                 <input type="text" name="txtdocentes" value="<?php echo $rInst["numDocentes"]; ?>" required>
                 <label>Nro. de Administrativos</label>
                 <input type="text" name="txtadministrativos" value="<?php echo $rInst["numAdministrativos"]; ?>" required>
+                <label>Departamento :</label>
+                <input type="text" name="txtdepartamento" value="Lima" disabled>
                 <label>Provincia (*):</label>
                 <select name="lprovincias" class="selector" id="provincia">
                     <?php
@@ -56,28 +58,9 @@ if ($rInst) {
                 </select>
                 <label>Distrito (*):</label>
                 <select name="ldistritos" class="selector" id="distrito"></select>
-                <script>
-                    function cargarDistritos(provinciaId) {
-                        var distritoDropdown = document.getElementById('distrito');
-                        var xhr = new XMLHttpRequest();
-                        xhr.onreadystatechange = function() {
-                            if (xhr.readyState === XMLHttpRequest.DONE) {
-                                distritoDropdown.innerHTML = xhr.responseText;
-                            }
-                        };
-                        xhr.open('GET', 'get_distritos.php?idProvincia=' + provinciaId, true);
-                        xhr.send();
-                    }
-                    window.addEventListener('DOMContentLoaded', function() {
-                        var provinciaSeleccionada = document.getElementById('provincia').value;
-                        cargarDistritos(provinciaSeleccionada);
-                    });
-                    document.getElementById('provincia').addEventListener('change', function() {
-                        var provinciaId = this.value;
-                        cargarDistritos(provinciaId);
-                    });
-                </script>
-            <?php } elseif ($tabla === "PersonaIndividual") { ?>
+            </fieldset>
+        <?php } elseif ($tabla === "PersonaIndividual") { ?>
+            <fieldset id="actualizar">
                 <label>Nombres (*):</label>
                 <input type="text" name="txtnombres" value="<?php echo $rPers["nombre"]; ?>" required>
                 <label>Apellidos (*):</label>
@@ -86,6 +69,8 @@ if ($rInst) {
                 <input type="text" name="txtedad" value="<?php echo $rPers["edad"]; ?>" required>
                 <label>Nro. DNI (*):</label>
                 <input type="text" name="txtdni" value="<?php echo $rPers["dni"]; ?>" maxlength="8" minlength="8" required>
+                <label>Departamento :</label>
+                <input type="text" name="txtdepartamento" value="Lima" disabled>
                 <label>Provincia a la que perteneces (*):</label>
                 <select name="lprovincias" class="selector" id="provincia">
                     <?php
@@ -100,31 +85,11 @@ if ($rInst) {
                 </select>
                 <label>Distrito (*):</label>
                 <select name="ldistritos" class="selector" id="distrito"></select>
-                <script>
-                    function cargarDistritos(provinciaId) {
-                        var distritoDropdown = document.getElementById('distrito');
-                        var xhr = new XMLHttpRequest();
-                        xhr.onreadystatechange = function() {
-                            if (xhr.readyState === XMLHttpRequest.DONE) {
-                                distritoDropdown.innerHTML = xhr.responseText;
-                            }
-                        };
-                        xhr.open('GET', 'get_distritos.php?idProvincia=' + provinciaId, true);
-                        xhr.send();
-                    }
-                    window.addEventListener('DOMContentLoaded', function() {
-                        var provinciaSeleccionada = document.getElementById('provincia').value;
-                        cargarDistritos(provinciaSeleccionada);
-                    });
-                    document.getElementById('provincia').addEventListener('change', function() {
-                        var provinciaId = this.value;
-                        cargarDistritos(provinciaId);
-                    });
-                </script>
-            <?php } ?>
-            <input type="submit" value="Actualizar tus datos">
-        </form>
-    </div>
+                <input type="submit" class="btn-actualizar" value="Actualizar tus datos">
+            </fieldset>
+        <?php } ?>
+    </form>
+    <script src="js/actualizar.js"></script>
 </body>
 
 </html>

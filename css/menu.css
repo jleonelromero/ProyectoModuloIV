@@ -1,0 +1,100 @@
+.header-bar {
+   background-color: #3366cc;
+   color: white;
+   padding: 10px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   border-bottom: 3px solid #27408b;
+   position: relative;
+}
+
+.logo {
+   font-weight: bold;
+}
+
+.menu {
+   display: none;
+   padding: 2px;
+   position: absolute;
+   background-color: #27408b;
+   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+   z-index: 1;
+   top: 100%;
+   right: 0;
+   width: 190px;
+}
+
+.menu.show {
+   display: block;
+}
+
+.menu ul {
+   list-style: none;
+   padding: 0;
+   margin: 0;
+}
+
+.menu ul li {
+   padding: 10px;
+   border-bottom: 1px solid #ddd;
+   position: relative;
+   margin: 0;
+}
+
+.menu ul li:hover {
+   background-color: #3c4e84;
+}
+
+.menu ul li a {
+   text-decoration: none;
+   color: #ffffff;
+   display: flex;
+   align-items: center;
+}
+
+.menu ul li a i {
+   margin-right: 20px;
+}
+
+.submenu {
+   display: none;
+   position: absolute;
+   top: 0;
+   right: 101%;
+   width: 230px;
+   background-color: #27408b;
+   z-index: 1;
+   text-align: right;
+}
+
+.submenu.show {
+   display: block;
+}
+
+.submenu:hover .submenu-options {
+   display: block;
+}
+
+.submenu-options {
+   display: none;
+   position: absolute;
+   top: 0;
+   left: 100%;
+   min-width: 150px;
+   background-color: #f9f9f9;
+   z-index: 1;
+}
+
+.submenu-trigger:hover .submenu-options {
+   display: block;
+}
+
+.submenu-trigger span {
+   display: flex;
+   align-items: center;
+}
+
+.submenu-trigger span i {
+   margin-right: 24px;
+}

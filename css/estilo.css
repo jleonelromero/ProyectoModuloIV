@@ -11,7 +11,11 @@ body {
     font-family: Roboto-Black;
     margin: 0;
     padding: 0;
-    background: linear-gradient(to bottom right, #778af0, #4cafff, #f48fb1, #ffd54f);
+    background: 
+        linear-gradient(to bottom right, #FFD180, #FFCC80, #FFE0B2, #FFAB40),
+        linear-gradient(to bottom left, #FFE0B2, #FFAB40, #FFD180, #FFCC80),
+        linear-gradient(to top right, #FFAB40, #FFD180, #FFE0B2, #FFCC80),
+        linear-gradient(to top left, #FFCC80, #FFE0B2, #FFAB40, #FFD180);
     background-size: 400% 400%;
     animation: gradientAnimation 15s ease infinite;
     background-attachment: fixed;
@@ -19,47 +23,47 @@ body {
 
 @keyframes gradientAnimation {
     0% {
-        background-position: 0% 50%;
+        background-position: 0% 0%, 100% 0%, 0% 100%, 100% 100%;
     }
     50% {
-        background-position: 100% 50%;
+        background-position: 100% 0%, 0% 0%, 100% 100%, 0% 100%;
     }
     100% {
-        background-position: 0% 50%;
+        background-position: 0% 0%, 100% 0%, 0% 100%, 100% 100%;
     }
 }
 
-.container {
-    max-width: 90%;
-    margin: 20px auto;
+
+#login {
+    width: 300px;
+    margin: 50px auto;
     padding: 20px;
     background-color: rgba(255, 255, 255, 0.6);
     border-radius: 8px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.71);
 }
 
-h1 {
-    text-align: center;
+#login center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#login label {
+    margin-bottom: 10px;
     color: #333;
 }
 
-label {
-    display: block;
-    margin-bottom: 5px;
-    color: #333;
-    font-weight: bold;
-}
-
-input[type="text"],
-select {
-    width: 582px;
+#login .txt,
+#login .pwd {
+    width: 200px;
     padding: 8px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 3px;
 }
 
-input[type="submit"] {
+#login .btn {
     padding: 10px 20px;
     background-color: #007bff;
     color: #fff;
@@ -69,11 +73,58 @@ input[type="submit"] {
     transition: background-color 0.3s ease;
 }
 
-input[type="submit"]:hover {
+#login .btn:hover {
     background-color: #0056b3;
 }
 
-.selector {
+#login a {
+    color: #333;
+    text-decoration: none;
+}
+
+#login a:hover {
+    text-decoration: underline;
+}
+
+#actualizar {
+    width: 300px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.71);
+}
+
+#actualizar label {
+    margin-bottom: 10px;
+    color: #333;
+    display: block;
+}
+
+#actualizar input[type="text"],
+#actualizar select {
+    width: calc(100% - 20px);
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+#actualizar input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#actualizar input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+#actualizar .selector {
     width: 100%;
     padding: 8px;
     margin-bottom: 10px;
@@ -86,4 +137,21 @@ input[type="submit"]:hover {
     background-repeat: no-repeat;
     background-position: right 10px top 50%, 0 0;
     background-size: 18px auto;
+}
+
+#actualizar .btn-actualizar {
+    display: block;
+    margin-top: 10px;
+    margin-left: auto;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#actualizar .btn-actualizar:hover {
+    background-color: #0056b3;
 }
