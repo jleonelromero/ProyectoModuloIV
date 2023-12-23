@@ -46,88 +46,194 @@
 			<th>MEDIDAS (APROBADO EN SANTA MARÍA) 25-09-2009</th>
 		</tr>
 		<tr>
-			<td rowspan="23">1. ASEGURAR una educación de calidad con equidad, innovadora, sin exclusión social que desarrolle plenamente las capacidades del estudiante con la participación activa y comprometida del docente y la sociedad.</td>
-			<td rowspan="7">1.1 Universalización de la educación de calidad, con equidad, inclusión y alfabetización.</td>
-			<td rowspan="3">1. Establecer universalidad al acceso obligatorio, gratuito y oportuno a una educación pública de calidad con equidad.</td>
-			<td>1. Desarrollar programas de participación con municipalidades y entidades públicas y privadas, para fortalecer una educación pública de calidad con equidad.</td>
+			<td rowspan="23">
+			<a href=""> <img src="img/editar-mensaje.png" width="27" alt=""></a>	
+			1. ASEGURAR una educación de calidad con equidad, innovadora, sin exclusión social que desarrolle plenamente las capacidades del estudiante con la participación activa y comprometida del docente y la sociedad.</td>
+			<td rowspan="7">
+			<a href=""> <img src="img/editar-mensaje.png" width="27" alt=""></a>
+				
+			1.1 Universalización de la educación de calidad, con equidad, inclusión y alfabetización.</td>
+			<td rowspan="3">
+			<a href=""> <img src="img/editar-mensaje.png" width="27" alt=""></a>
+				
+			1. Establecer universalidad al acceso obligatorio, gratuito y oportuno a una educación pública de calidad con equidad.</td>
+			<td>
+			<a href=""> <img src="img/editar-mensaje.png" width="27" alt=""></a>
+				
+			1. Desarrollar programas de participación con municipalidades y entidades públicas y privadas, para fortalecer una educación pública de calidad con equidad.</td>
 		</tr>
 		<tr>
-			<td>2. Establecer programas asistenciales en las áreas vulnerables.</td>
+			<td>
+				<a href=""> <img src="img/editar-mensaje.png" width="27" alt=""></a>
+				2. Establecer programas asistenciales en las áreas vulnerables.</td>
 		</tr>
 		<tr>
-			<td>3. Ampliar la cobertura a los niños y niñas desde los 0 años, priorizando las zonas rurales y de pobreza extrema.</td>
+			<td>
+			<a href=""> <img src="img/editar-mensaje.png" width="27" alt=""></a>
+
+				3. Ampliar la cobertura a los niños y niñas desde los 0 años, priorizando las zonas rurales y de pobreza extrema.</td>
 		</tr>
 		<tr>
-			<td rowspan="2">2. garantizar la continuidad, inclusión, permanencia y culminación de los estudiantes de educación básica, priorizando las zonas vulnerables.</td>
-			<td>1. Establecer programas de educación básica que respondan a la realidad del educando.</td>
+			<td rowspan="2">
+			<a href=""> <img src="img/editar-mensaje.png" width="27" alt=""></a>
+				
+			2. garantizar la continuidad, inclusión, permanencia y culminación de los estudiantes de educación básica, priorizando las zonas vulnerables.</td>
+			<td>
+			<a href=""> <img src="img/editar-mensaje.png" width="27" alt=""></a>
+
+				1. Establecer programas de educación básica que respondan a la realidad del educando.</td>
 		</tr>
 		<tr>
-			<td>2. Ampliar el servicio de educación básica alternativa con presencia del gobierno local.</td>
+			<td>
+			<a href=""> <img src="img/editar-mensaje.png" width="27" alt=""></a>
+				
+			2. Ampliar el servicio de educación básica alternativa con presencia del gobierno local.</td>
 		</tr>
 		<tr>
-			<td rowspan="2">3. Erradicar el analfabetismo en la región, particularmente en la población rural y femenina a partir de una acción intersectorial</td>
-			<td>1. Desarrollar permanentemente programas de alfabetización en zonas vulnerables. </td>
+			<td rowspan="2">
+			<a href=""> <img src="img/editar-mensaje.png" width="27" alt=""></a>
+				
+			3. Erradicar el analfabetismo en la región, particularmente en la población rural y femenina a partir de una acción intersectorial</td>
+			<td>
+			<a href=""> <img src="img/editar-mensaje.png" width="27" alt=""></a>
+			1. Desarrollar permanentemente programas de alfabetización en zonas vulnerables. </td>
 		</tr>
 		<tr>
-			<td>2. Celebrar convenios con gobiernos locales, mimdes y otros.</td>
+			<td>
+			<a href=""> <img src="img/editar-mensaje.png" width="27" alt=""></a>
+				2. Celebrar convenios con gobiernos locales, mimdes y otros.</td>
 		</tr>
 		<tr>
-			<td rowspan="5">1.2 Atención prioritaria y desarrollo de capacidades y habilidades de los estudiantes de la primera infancia.</td>
-			<td rowspan="2">4. Asegurar la atención integral de los niños y niñas de 0-5 años en acción coordinada con los gobiernos locales y acción intersectorial.</td>
-			<td>1. Ampliación del nivel inicial con presupuesto excedente de plaza vacante por racionalización de otros niveles, continuando con la conversión de los Pronoei a II.EE. de nivel inicial.</td>
+			<td rowspan="5">
+			<a href=""> <img src="img/editar-mensaje.png" width="27" alt=""></a>
+				1.2 Atención prioritaria y desarrollo de capacidades y habilidades de los estudiantes de la primera infancia.</td>
+			<td rowspan="2">
+			<a href=""> <img src="img/editar-mensaje.png" width="27" alt=""></a>
+				4. Asegurar la atención integral de los niños y niñas de 0-5 años en acción coordinada con los gobiernos locales y acción intersectorial.</td>
+			<td>
+			<a href=""> <img src="img/editar-mensaje.png" width="27" alt=""></a>
+				1. Ampliación del nivel inicial con presupuesto excedente de plaza vacante por racionalización de otros niveles, continuando con la conversión de los Pronoei a II.EE. de nivel inicial.</td>
 		</tr>
 		<tr>
-			<td>2. Celebrar convenios con municipios, mimdes y otros para atención a programas.</td>
+			<td>
+			<a href=""> <img src="img/editar-mensaje.png" width="27" alt=""></a>
+				2. Celebrar convenios con municipios, mimdes y otros para atención a programas.</td>
 		</tr>
 		<tr>
-			<td rowspan="3">5. Garantizar el acceso, la cobertura y mejorar la calidad del servicio de la educación de niños menores de 6 años.</td>
-			<td>1. Afianzamiento y sensibilización a pobladores y padres de familia sobre la importancia de la asistencia de niños y niñas al nivel inicial.</td>
+			<td rowspan="3">
+			<a href=""> <img src="img/editar-mensaje.png" width="27" alt=""></a>
+				
+			5. Garantizar el acceso, la cobertura y mejorar la calidad del servicio de la educación de niños menores de 6 años.</td>
+			<td>
+			<a href=""> <img src="img/editar-mensaje.png" width="27" alt=""></a>
+				
+			1. Afianzamiento y sensibilización a pobladores y padres de familia sobre la importancia de la asistencia de niños y niñas al nivel inicial.</td>
 		</tr>
 		<tr>
-			<td>2. Garantizar el apoyo alimentario a los niños de 0 a 6 años, en coordinación con otras instituciones.</td>
+			<td> 
+				<a href=""> <img src="img/editar-mensaje.png" width="27" alt=""></a>
+				
+			2. Garantizar el apoyo alimentario a los niños de 0 a 6 años, en coordinación con otras instituciones.</td>
 		</tr>
 		<tr>
-			<td>3. Fortalecer y gestionar la ampliación del presupuesto por resultados para garantizar el desarrollo de capacidades y habilidades en niños menores de 6 años.</td>
+			<td> 
+				<a href=""> <img src="img/editar-mensaje.png" width="27" alt=""></a>
+				
+			3. Fortalecer y gestionar la ampliación del presupuesto por resultados para garantizar el desarrollo de capacidades y habilidades en niños menores de 6 años.</td>
 		</tr>
 		<tr>
-			<td rowspan="7">1.3 Desarrollo pleno de las capacidades fundamentales del estudiante de educación básica.</td>
-			<td rowspan="2">6. Asegurar las condiciones esenciales para el aprendizaje de los estudiantes con calidad y equidad priorizando zona vulnerables.</td>
-			<td>1. Implementar a las instituciones educativas con materiales y equipos de su necesidad y de acuerdo a su realidad.</td>
+			<td rowspan="7"> 
+				<a href=""> <img src="img/editar-mensaje.png" width="27" alt=""></a>
+				
+			1.3 Desarrollo pleno de las capacidades fundamentales del estudiante de educación básica.</td>
+			<td rowspan="2"> 
+				<a href=""> <img src="img/editar-mensaje.png" width="27" alt=""></a>
+				
+			6. Asegurar las condiciones esenciales para el aprendizaje de los estudiantes con calidad y equidad priorizando zona vulnerables.</td>
+			<td> 
+				<a href=""> <img src="img/editar-mensaje.png" width="27" alt=""></a>
+				
+			1. Implementar a las instituciones educativas con materiales y equipos de su necesidad y de acuerdo a su realidad.</td>
 		</tr>
 		<tr>
-			<td>2. Desarrollar programas de tutoría y nivelación académica.</td>
+			<td> 
+				<a href=""> <img src="img/editar-mensaje.png" width="27" alt=""></a>
+				
+			2. Desarrollar programas de tutoría y nivelación académica.</td>
 		</tr>
 		<tr>
-			<td rowspan="3">7. Garantizar el logro de aprendizajes fundamentales para prevenir el fracaso escolar, con especial atención a las áreas de comunicación y matemática.</td>
-			<td>1. Diseñar lineamientos de prevención del fracaso escolar en función de los aprendizajes significativos.</td>
+			<td rowspan="3">
+				<a href=""> <img src="img/editar-mensaje.png" width="27" alt=""></a>
+				
+			7. Garantizar el logro de aprendizajes fundamentales para prevenir el fracaso escolar, con especial atención a las áreas de comunicación y matemática.</td>
+			<td> 
+				<a href=""> <img src="img/editar-mensaje.png" width="27" alt=""></a>
+				
+			1. Diseñar lineamientos de prevención del fracaso escolar en función de los aprendizajes significativos.</td>
 		</tr>
 		<tr>
-			<td>2. Reforzar el plan lector en comprensión y análisis de textos y material bibliográfico.</td>
+			<td> 
+				<a href=""> <img src="img/editar-mensaje.png" width="27" alt=""></a>
+				
+			2. Reforzar el plan lector en comprensión y análisis de textos y material bibliográfico.</td>
 		</tr>
 		<tr>
-			<td>3. Promover el desarrollo de las capacidades matemáticas, comunicativas e investigativas.</td>
+			<td>
+				<a href=""> <img src="img/editar-mensaje.png" width="27" alt=""></a>
+				
+			3. Promover el desarrollo de las capacidades matemáticas, comunicativas e investigativas.</td>
 		</tr>
 		<tr>
-			<td rowspan="2">8. Asegurar la atención integral de los estudiantes en situación de vulnerabilidad y de riesgo aprovechando los recursos naturales e institucionales de la zona en coordinación multisectorial.</td>
-			<td>1. Convenios con entidades públicas y privadas para el desarrollo de actividades y proyectos productivos y de gestión empresarial, aprovechando los recursos de la zona.</td>
+			<td rowspan="2" >
+				<a href=""> <img src="img/editar-mensaje.png" width="27" alt=""></a>
+				
+			8. Asegurar la atención integral de los estudiantes en situación de vulnerabilidad y de riesgo aprovechando los recursos naturales e institucionales de la zona en coordinación multisectorial.</td>
+			<td>
+				<a href=""> <img src="img/editar-mensaje.png" width="27" alt=""></a>
+				
+			1. Convenios con entidades públicas y privadas para el desarrollo de actividades y proyectos productivos y de gestión empresarial, aprovechando los recursos de la zona.</td>
 		</tr>
 		<tr>
-			<td>2. Fortalecer programas de gestión empresarial de las instituciones con el apoyo y financiamiento de los organizadores.</td>
+			<td>
+				<a href=""> <img src="img/editar-mensaje.png" width="27" alt=""></a>
+				
+			2. Fortalecer programas de gestión empresarial de las instituciones con el apoyo y financiamiento de los organizadores.</td>
 		</tr>
 		<tr>
-			<td rowspan="4">1.4 Fortalecimiento de capacidades de los docentes en formación en servicio para garantizar una educación de calidad.</td>
-			<td rowspan="2">9. Capacitar al docente acorde a las políticas educativas regionales establecidas en el proyecto educativo regional.</td>
-			<td>1. Elaborar e implementar un programa de capacitación docente articulado al plan regional de desarrollo de capacidades.</td>
+			<td rowspan="4">
+				<a href=""> <img src="img/editar-mensaje.png" width="27" alt=""></a>
+				
+			1.4 Fortalecimiento de capacidades de los docentes en formación en servicio para garantizar una educación de calidad.</td>
+			<td rowspan="2">
+				<a href=""> <img src="img/editar-mensaje.png" width="27" alt=""></a>
+				
+			9. Capacitar al docente acorde a las políticas educativas regionales establecidas en el proyecto educativo regional.</td>
+			<td>
+				<a href=""> <img src="img/editar-mensaje.png" width="27" alt=""></a>
+				
+			1. Elaborar e implementar un programa de capacitación docente articulado al plan regional de desarrollo de capacidades.</td>
 		</tr>
 		<tr>
-			<td>2. Desarrollo de convenios con gobiernos locales y otras instituciones públicas y privadas, para capacitación de docentes.</td>
+			<td>
+				<a href=""> <img src="img/editar-mensaje.png" width="27" alt=""></a>
+				
+			2. Desarrollo de convenios con gobiernos locales y otras instituciones públicas y privadas, para capacitación de docentes.</td>
 		</tr>
 		<tr>
-			<td rowspan="2">10. Promover la formación profesional y continua del docente en función a la demanda y necesidad educativa regional.</td>
-			<td>1. Establecer convenios con las universidades e institutos pedagógicos para la formación de docentes de acuerdo a la demanda de la región.</td>
+			<td rowspan="2">
+				<a href=""> <img src="img/editar-mensaje.png" width="27" alt=""></a>
+				
+			10. Promover la formación profesional y continua del docente en función a la demanda y necesidad educativa regional.</td>
+			<td>
+				<a href=""> <img src="img/editar-mensaje.png" width="27" alt=""></a>
+				
+			1. Establecer convenios con las universidades e institutos pedagógicos para la formación de docentes de acuerdo a la demanda de la región.</td>
 		</tr>
 		<tr>
-			<td>2. Implementar un programa de revalorización social y estímulos del docente.</td>
+			<td>
+				<a href=""> <img src="img/editar-mensaje.png" width="27" alt=""></a>
+				
+			2. Implementar un programa de revalorización social y estímulos del docente.</td>
 		</tr>
 	</table>
 	
@@ -143,62 +249,140 @@
 			<th>MEDIDAS (APROBADO EN SANTA MARÍA) 25-09-2009</th>
 		</tr>
 	<tr>
-		<td rowspan="16">2. Garantizar una formación ciudadana crítica, creativa, autónoma, emprendedora y propositiva, que permita la realización individual y social a partir del desarrollo integral del estudiante con una sólida identidad local, regional y nacional</td>
-		<td rowspan="7">2.1 Formación analítica, creativa, autónoma y emprendedora con un diseño curricular diversificado y contextualizado.</td>
-		<td>11. elaborar e implementar lineamientos de política educativa regional.</td>
-		<td>1. Diseño de los lineamientos de política educativa para la diversificación curricular regional.</td>
+		<td rowspan="16">
+				<a href=""> <img src="img/editar-mensaje.png" width="27" alt=""></a>
+			
+		2. Garantizar una formación ciudadana crítica, creativa, autónoma, emprendedora y propositiva, que permita la realización individual y social a partir del desarrollo integral del estudiante con una sólida identidad local, regional y nacional</td>
+		<td rowspan="7">
+				<a href=""> <img src="img/editar-mensaje.png" width="27" alt=""></a>
+			
+		2.1 Formación analítica, creativa, autónoma y emprendedora con un diseño curricular diversificado y contextualizado.</td>
+		<td>
+				<a href=""> <img src="img/editar-mensaje.png" width="27" alt=""></a>
+			
+		11. elaborar e implementar lineamientos de política educativa regional.</td>
+		<td>
+				<a href=""> <img src="img/editar-mensaje.png" width="27" alt=""></a>
+			
+		1. Diseño de los lineamientos de política educativa para la diversificación curricular regional.</td>
 	</tr>
 	<tr>
-		<td rowspan="3">12. Fomentar un diseño curricular inclusivo, con enfoque intercultural, bilingüe, diversificado y participativo de acuerdo  al entorno local, regional y de manera participativa.</td>
-		<td>1. desarrollar programas de socialización y sensibilización de la aplicación de los lineamientos de política educativa regional.</td>
+		<td rowspan="3">
+				<a href=""> <img src="img/editar-mensaje.png" width="27" alt=""></a>
+			
+		12. Fomentar un diseño curricular inclusivo, con enfoque intercultural, bilingüe, diversificado y participativo de acuerdo  al entorno local, regional y de manera participativa.</td>
+		<td>
+				<a href=""> <img src="img/editar-mensaje.png" width="27" alt=""></a>
+			
+		1. desarrollar programas de socialización y sensibilización de la aplicación de los lineamientos de política educativa regional.</td>
 	</tr>
 	<tr>
-		<td>2. fortalecer las redes educativas para lograr en las instituciones educativas la aplicación adecuada del diseño curricular debidamente contextualizado y diversificado.</td>
+		<td>
+				<a href=""> <img src="img/editar-mensaje.png" width="27" alt=""></a>
+			
+		2. fortalecer las redes educativas para lograr en las instituciones educativas la aplicación adecuada del diseño curricular debidamente contextualizado y diversificado.</td>
 	</tr>
 	<tr>
-		<td>3. desarrollar programas de capacitación docente para la formulación, aplicación y seguimiento de los diseños curriculares diversificados.</td>
+		<td>
+				<a href=""> <img src="img/editar-mensaje.png" width="27" alt=""></a>
+			
+		3. desarrollar programas de capacitación docente para la formulación, aplicación y seguimiento de los diseños curriculares diversificados.</td>
 	</tr>
 	<tr>
-		<td rowspan="3">13. Promoción del desarrollo integral basado en capacidades, actitudes, habilidades, destrezas deportivas y valores de los estudiantes de acuerdo  a la realidad sociocultural, avance de la ciencia y la tecnología, la biodiversidad  y a los ejes de desarrollo local y regional y nacional.</td>
-		<td>1. Difusión a través de los medios de comunicación (televisiva, radial) de la promoción de desarrollo integral de los estudiantes en el marco de la realidad local, regional y nacional.</td>
+		<td rowspan="3">
+				<a href=""> <img src="img/editar-mensaje.png" width="27" alt=""></a>
+			
+		13. Promoción del desarrollo integral basado en capacidades, actitudes, habilidades, destrezas deportivas y valores de los estudiantes de acuerdo  a la realidad sociocultural, avance de la ciencia y la tecnología, la biodiversidad  y a los ejes de desarrollo local y regional y nacional.</td>
+		<td>
+				<a href=""> <img src="img/editar-mensaje.png" width="27" alt=""></a>
+			
+		1. Difusión a través de los medios de comunicación (televisiva, radial) de la promoción de desarrollo integral de los estudiantes en el marco de la realidad local, regional y nacional.</td>
 	</tr>
 	<tr>
-		<td>2. Creación de espacios educativos culturales y deportivos a través de los recursos del estado y el sector privado y otros.</td>
+		<td>
+				<a href=""> <img src="img/editar-mensaje.png" width="27" alt=""></a>
+			
+		2. Creación de espacios educativos culturales y deportivos a través de los recursos del estado y el sector privado y otros.</td>
 	</tr>
 	<tr>
-		<td>3. Propiciar convenios con universidades e institutos para la integración educativa.</td>
+		<td>
+				<a href=""> <img src="img/editar-mensaje.png" width="27" alt=""></a>
+			
+		3. Propiciar convenios con universidades e institutos para la integración educativa.</td>
 	</tr>
 	<tr>
-		<td rowspan="7">2.2. Ciudadanos líderes y comprometidos con el desarrollo personal y social de la región ejerciendo sus derechos y deberes.</td>
-		<td rowspan="3">14. Impulso  de una manera  creativa y sostenida de una educación en democracia  que favorezca integración, cohesión social y gobernabilidad.</td>
-		<td>1. Formación docente en enfoques y estrategias metodológicas de educación para la democracia.</td>
+		<td rowspan="7">
+				<a href=""> <img src="img/editar-mensaje.png" width="27" alt=""></a>
+			
+		2.2. Ciudadanos líderes y comprometidos con el desarrollo personal y social de la región ejerciendo sus derechos y deberes.</td>
+		<td rowspan="3">
+				<a href=""> <img src="img/editar-mensaje.png" width="27" alt=""></a>
+			
+		14. Impulso  de una manera  creativa y sostenida de una educación en democracia  que favorezca integración, cohesión social y gobernabilidad.</td>
+		<td>
+				<a href=""> <img src="img/editar-mensaje.png" width="27" alt=""></a>
+			
+		1. Formación docente en enfoques y estrategias metodológicas de educación para la democracia.</td>
 	</tr>
 	<tr>
-		<td>2. Propiciar la articulación institucional pública y cívica para el fomento de valores y buenas prácticas ciudadanas.</td>
+		<td>
+				<a href=""> <img src="img/editar-mensaje.png" width="27" alt=""></a>
+			
+		2. Propiciar la articulación institucional pública y cívica para el fomento de valores y buenas prácticas ciudadanas.</td>
 	</tr>
 	<tr>
-		<td>3. Insertar en el proceso educativo contenidos para el desarrollo de liderazgo, autoestima y vocación emprendedora.</td>
+		<td>
+				<a href=""> <img src="img/editar-mensaje.png" width="27" alt=""></a>
+			
+		3. Insertar en el proceso educativo contenidos para el desarrollo de liderazgo, autoestima y vocación emprendedora.</td>
 	</tr>
 	<tr>
-		<td rowspan="4">15. Creación de espacios y mecanismos de participación de los educandos para fortalecer el ejercicio de los derechos y deberes, identidad e integración local y regional.</td>
-		<td>Fortalecer y crear espacios de participación de los educandos para el ejercicio de sus derechos y deberes (municipios escolares, Conei y otros).</td>
+		<td rowspan="4">
+				<a href=""> <img src="img/editar-mensaje.png" width="27" alt=""></a>
+			
+		15. Creación de espacios y mecanismos de participación de los educandos para fortalecer el ejercicio de los derechos y deberes, identidad e integración local y regional.</td>
+		<td>
+				<a href=""> <img src="img/editar-mensaje.png" width="27" alt=""></a>
+			
+		Fortalecer y crear espacios de participación de los educandos para el ejercicio de sus derechos y deberes (municipios escolares, Conei y otros).</td>
 	</tr>
 	<tr>
-		<td>2. Promover la participación de los educandos en concursos escolares.</td>
+		<td>
+				<a href=""> <img src="img/editar-mensaje.png" width="27" alt=""></a>
+			
+		2. Promover la participación de los educandos en concursos escolares.</td>
 	</tr>
 	<tr>
-		<td>3. Desarrollar, fomentar y difundir el arte y la cultura nacional, regional y local.</td>
+		<td>
+				<a href=""> <img src="img/editar-mensaje.png" width="27" alt=""></a>
+			
+		3. Desarrollar, fomentar y difundir el arte y la cultura nacional, regional y local.</td>
 	</tr>
 	<tr>
-		<td>4. Celebrar convenios con instituciones públicas y privadas para fortalecer la participación de los educandos para el ejercicio ciudadano.</td>
+		<td>
+				<a href=""> <img src="img/editar-mensaje.png" width="27" alt=""></a>
+			
+		4. Celebrar convenios con instituciones públicas y privadas para fortalecer la participación de los educandos para el ejercicio ciudadano.</td>
 	</tr>
 	<tr>
-		<td rowspan="2">2.3. sociedad promotora de la identidad local y regional.</td>
-		<td rowspan="2">16. Fomentar el turismo, programas y proyectos educativos que reafirmen y consoliden la identidad local y regional, revalorando  las manifestaciones y patrimonio cultural.</td>
-		<td>1. Fomentar redes interinstitucionales locales, provinciales y regional para promover y difundir el turismo y construir la identidad local y regional, revalorando las manifestaciones y patrimonio cultural.</td>
+		<td rowspan="2">
+				<a href=""> <img src="img/editar-mensaje.png" width="27" alt=""></a>
+			
+		2.3. sociedad promotora de la identidad local y regional.</td>
+		<td rowspan="2">
+				<a href=""> <img src="img/editar-mensaje.png" width="27" alt=""></a>
+			
+		16. Fomentar el turismo, programas y proyectos educativos que reafirmen y consoliden la identidad local y regional, revalorando  las manifestaciones y patrimonio cultural.</td>
+		<td>
+				<a href=""> <img src="img/editar-mensaje.png" width="27" alt=""></a>
+			
+		1. Fomentar redes interinstitucionales locales, provinciales y regional para promover y difundir el turismo y construir la identidad local y regional, revalorando las manifestaciones y patrimonio cultural.</td>
 	</tr>
 	<tr>
-		<td>2. Promover y difundir las potencialidades turísticas y culturales de la region.</td>
+		<td>
+				<a href=""> <img src="img/editar-mensaje.png" width="27" alt=""></a>
+			
+		2. Promover y difundir las potencialidades turísticas y culturales de la region.</td>
 	</tr>
 </table>
 
@@ -214,43 +398,94 @@
 			<th>MEDIDAS (APROBADO EN SANTA MARÍA) 25-09-2009</th>
 		</tr>
 	<tr>
-		<td rowspan="11">3. Lograr ciudadanos con principios éticos, conductas morales y estéticos en relación con los demás y su desarrollo humano.</td>
-		<td rowspan="11">3.1. comunidad educativa transparente con ética y práctica de valores promoviendo para desarrollar una cultura de paz.</td>
-		<td rowspan="3">17. fomentar estrategias participativas con la familia y comunidad para garantizar la formación de ciudadanos con valores desde la infancia.</td>
-		<td>1. aplicar estrategias integradas que incorporen la conciencia, el reconocimiento y análisis de las necesidades para modificar actitudes, valores y prácticas de crianza.</td>
+		<td rowspan="11">
+				<a href=""> <img src="img/editar-mensaje.png" width="27" alt=""></a>
+			
+		3. Lograr ciudadanos con principios éticos, conductas morales y estéticos en relación con los demás y su desarrollo humano.</td>
+		<td rowspan="11">
+				<a href=""> <img src="img/editar-mensaje.png" width="27" alt=""></a>
+			
+		3.1. comunidad educativa transparente con ética y práctica de valores promoviendo para desarrollar una cultura de paz.</td>
+		<td rowspan="3">
+				<a href=""> <img src="img/editar-mensaje.png" width="27" alt=""></a>
+			
+		17. fomentar estrategias participativas con la familia y comunidad para garantizar la formación de ciudadanos con valores desde la infancia.</td>
+		<td>
+				<a href=""> <img src="img/editar-mensaje.png" width="27" alt=""></a>
+			
+		1. aplicar estrategias integradas que incorporen la conciencia, el reconocimiento y análisis de las necesidades para modificar actitudes, valores y prácticas de crianza.</td>
 	</tr>
 	<tr>
-		<td>2. Vincular la educación a padres y madres para el cuidado y formación inicial de los niños.</td>
+		<td>
+				<a href=""> <img src="img/editar-mensaje.png" width="27" alt=""></a>
+			
+		2. Vincular la educación a padres y madres para el cuidado y formación inicial de los niños.</td>
 	</tr>
 	<tr>
-		<td>3. definir el rol y la responsabilidad del gobierno regional y local y de la sociedad civil para estimular una mayor participación social en la formulación de estrategias.</td>
+		<td>
+				<a href=""> <img src="img/editar-mensaje.png" width="27" alt=""></a>
+			
+		3. definir el rol y la responsabilidad del gobierno regional y local y de la sociedad civil para estimular una mayor participación social en la formulación de estrategias.</td>
 	</tr>
 	<tr>
-		<td rowspan="4">18. garantizar la práctica de valores éticos, morales y estéticos en las instituciones educativas desde la infancia y a lo largo del proceso educativo.</td>
-		<td>1. fortalecer programas sociales para la participación directa y mejoramiento del desempeño ciudadano mediante la práctica de valores escuela - comunidad.</td>
+		<td rowspan="4">
+				<a href=""> <img src="img/editar-mensaje.png" width="27" alt=""></a>
+			
+		18. garantizar la práctica de valores éticos, morales y estéticos en las instituciones educativas desde la infancia y a lo largo del proceso educativo.</td>
+		<td>
+				<a href=""> <img src="img/editar-mensaje.png" width="27" alt=""></a>
+			
+		1. fortalecer programas sociales para la participación directa y mejoramiento del desempeño ciudadano mediante la práctica de valores escuela - comunidad.</td>
 	</tr>
 	<tr>
-		<td>2. Crear e implementar centros de orientación familiar para promocionar la autoformación, autoestima y el autoconcepto.</td>
+		<td>
+				<a href=""> <img src="img/editar-mensaje.png" width="27" alt=""></a>
+			
+		2. Crear e implementar centros de orientación familiar para promocionar la autoformación, autoestima y el autoconcepto.</td>
 	</tr>
 	<tr>
-		<td>3. Promocionar en los medios de comunicación acciones cívicas para resaltar la práctica de valores.</td>
+		<td>
+				<a href=""> <img src="img/editar-mensaje.png" width="27" alt=""></a>
+			
+		3. Promocionar en los medios de comunicación acciones cívicas para resaltar la práctica de valores.</td>
 	</tr>
 	<tr>
-		<td>4. promoción de la función educativa, informativa y cultural de los principales actores educativos en los medios de comunicación.</td>
+		<td>
+				<a href=""> <img src="img/editar-mensaje.png" width="27" alt=""></a>
+			
+		4. promoción de la función educativa, informativa y cultural de los principales actores educativos en los medios de comunicación.</td>
 	</tr>
 	<tr>
-		<td rowspan="2">19. garantizar un sistema educativo local y regional con práctica de valores y transparencia en la función publica.</td>
-		<td>1. Fomentar y difundir la ética profesional y la función del desarrollo social de la administración pública en el marco de una cultura de paz.</td>
+		<td rowspan="2">
+				<a href=""> <img src="img/editar-mensaje.png" width="27" alt=""></a>
+			
+		19. garantizar un sistema educativo local y regional con práctica de valores y transparencia en la función publica.</td>
+		<td>
+				<a href=""> <img src="img/editar-mensaje.png" width="27" alt=""></a>
+			
+		1. Fomentar y difundir la ética profesional y la función del desarrollo social de la administración pública en el marco de una cultura de paz.</td>
 	</tr>
 	<tr>
-		<td>2. Acceso de la sociedad civil en la transparencia de la rendición de cuentas e información de gestión pública en las instancias descentralizadas regional, ugel e instituciones educativas.</td>
+		<td>
+				<a href=""> <img src="img/editar-mensaje.png" width="27" alt=""></a>
+			
+		2. Acceso de la sociedad civil en la transparencia de la rendición de cuentas e información de gestión pública en las instancias descentralizadas regional, ugel e instituciones educativas.</td>
 	</tr>
 	<tr>
-		<td rowspan="2">20. fortalecer la identidad de la persona como agente de cambio en la sociedad, basada en valores éticos y morales.</td>
-		<td>1. promover la participación de los actores educativos y la sociedad civil en la identidad de la persona como agente de cambio y práctica permanente de valores éticos y morales.</td>
+		<td rowspan="2">
+				<a href=""> <img src="img/editar-mensaje.png" width="27" alt=""></a>
+			
+		20. fortalecer la identidad de la persona como agente de cambio en la sociedad, basada en valores éticos y morales.</td>
+		<td>
+		<a href=""> <img src="img/editar-mensaje.png" width="27" alt=""></a>
+			
+		1. promover la participación de los actores educativos y la sociedad civil en la identidad de la persona como agente de cambio y práctica permanente de valores éticos y morales.</td>
 	</tr>
 	<tr>
-		<td>2. Establecer relaciones multisectoriales para promover la práctica de valores.</td>
+		<td>
+		<a href=""> <img src="img/editar-mensaje.png" width="27" alt=""></a>
+
+			2. Establecer relaciones multisectoriales para promover la práctica de valores.</td>
 	</tr>
 </table>
 

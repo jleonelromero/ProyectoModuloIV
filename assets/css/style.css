@@ -883,7 +883,7 @@ aside.left-panel {
     display: inline-block; }
 .right-panel .navbar-brand {
   line-height: 42px; 
-margin-left:600px;}
+}
   .right-panel .navbar-brand img {
     max-width: 145px; }
   .right-panel .navbar-brand.hidden {
