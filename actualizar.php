@@ -45,12 +45,15 @@ if ($rInst) {
                 <label>Departamento :</label>
                 <input type="text" name="txtdepartamento" value="Lima" disabled>
                 <label>Provincia (*):</label>
-                <select name="lprovincias" class="selector" id="provincia">
+                <select name="lprovincias" class="selector" id="provincia" required>
+                <option value="" disabled selected>Elige tu provincia</option>  
+
                     <?php
                     $sql = "SELECT * FROM tbprovincia";
                     $f = mysqli_query($cn, $sql);
                     while ($r = mysqli_fetch_array($f)) {
                     ?>
+
                         <option value="<?php echo $r["idProvincia"] ?>"><?php echo $r["nombre"]; ?></option>
                     <?php
                     }
@@ -72,7 +75,9 @@ if ($rInst) {
                 <label>Departamento :</label>
                 <input type="text" name="txtdepartamento" value="Lima" disabled>
                 <label>Provincia a la que perteneces (*):</label>
-                <select name="lprovincias" class="selector" id="provincia">
+                <select name="lprovincias" class="selector" id="provincia" required>
+                <option value="" disabled selected>Elige tu provincia</option>
+
                     <?php
                     $sql = "SELECT * FROM tbprovincia";
                     $f = mysqli_query($cn, $sql);

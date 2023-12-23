@@ -64,7 +64,7 @@ $rol = ($r["nombre"]);
 
                         <div class="user-menu dropdown-menu">
                         <?php if ($rol === 'Admin') { ?>
-                            <a class="nav-link" href="#"><i class="fa fa- user"></i>Datos Personales</a>
+                            <a class="nav-link" href="perfil.php"><i class="fa fa- user"></i>Datos Personales</a>
                             <a class="nav-link" href='principal.php'><i class="fas fa-bullseye"></i> Objetivos</a>
                             <a  class="nav-link" href='reporte.php'><i class="fas fa-users"></i> Reportes - Personas</a>
                             <a  class="nav-link" href='reporte.php'><i class="fas fa-users"></i>Reportes - I.E</a>
@@ -78,7 +78,7 @@ $rol = ($r["nombre"]);
                                         <a class="nav-link" href='principal.php'><i class="fas fa-home"></i> Principal</a>
 
 
-                                <a class="nav-link" href="#"><i class="fa-solid fa-circle-info"></i>Datos Personales</a>
+                                <a class="nav-link" href="perfil.php"><i class="fa-solid fa-circle-info"></i>Datos Personales</a>
 
                                     <a class="nav-link" href="cambiarpass.php"><i class="fa fa-lock"></i> Actualizar Contraseña</span></a>
                                     <a class="nav-link" href='sugerencias.php'><i class="fas fa-lightbulb"></i> Mis Sugerencias</a>
@@ -113,9 +113,9 @@ $rol = ($r["nombre"]);
                             <div class="card-body">
 
 
-                                <h4 class="box-title">Traffic </h4>
+                                <!-- <h4 class="box-title">Traffic </h4>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore iusto ex nulla molestiae consequatur cumque voluptatem amet tenetur voluptates iure. Sunt, ipsa consequuntur rem obcaecati possimus recusandae totam saepe corrupti.</p>
                            
-                           
+                            -->
                            
                            
