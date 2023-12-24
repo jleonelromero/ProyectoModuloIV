@@ -12,10 +12,6 @@ if ($valor == null) {
     header("Location: login.php");
 } else {
     $_SESSION["usuario"] = $valor;
-    $_SESSION["auth"] = $r["tipoUsuario"];
-    if ($r["tipoUsuario"] == '2') {
-        header("Location: principal_admin.php");
-    } else {
-        header("Location: principal.php");
-    }
+    $_SESSION["auth"] = 1;
+    header("Location: principal.php");
 }

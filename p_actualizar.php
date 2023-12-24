@@ -1,6 +1,6 @@
 <?php
 include("Include/auth.php");
-require_once 'Include/conexion.php';
+include("Include/conexion.php");
 $cod = $_SESSION["usuario"];
 $sqlInstitucion = "SELECT * FROM tbinstitucioneducativa WHERE idInstitucionEducativa = '$cod'";
 $fInst = mysqli_query($cn, $sqlInstitucion);
@@ -26,4 +26,4 @@ if ($rInst) {
     $sql = "UPDATE tbpersonaindividual SET nombre = '$nombres', apellido = '$apellidos', edad = '$edad', dni = '$dni', idDistrito = '$distrito', estado = 1 WHERE idPersona = '$cod'";
 }
 mysqli_query($cn, $sql);
-header('location: perfil.php');
+header('location: principal.php');

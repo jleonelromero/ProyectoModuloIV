@@ -1,5 +1,5 @@
 <?php
-require_once 'Include/conexion.php';
+include("Include/conexion.php");
 $idProvincia = $_GET['idProvincia'];
 $sql = "SELECT * FROM tbdistrito WHERE idProvincia = '$idProvincia'";
 $result = mysqli_query($cn, $sql);

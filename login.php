@@ -10,33 +10,24 @@
 </head>
 
 <body>
-    <!--
-        https://nicepage.com/es/css-templates/preview/hola-amigo-1474004?device=desktop
-        
-    -->
     <form action="p_login.php" method="post">
         <fieldset id="login">
             <center>
-                <a href="login.php">
-                <img src="img/login.jpeg"  class="img" alt="">
-
-                </a>
-                <label for="txtusuario" class="labels">Usuario</label>
+                <label for="txtusuario">Usuario:</label>
                 <br>
-                <input type="text" id="txtusuario" name="txtusuario" class="input" maxlength="30" minlength="3">
+                <input type="text" id="txtusuario" name="txtusuario" class="txt">
                 <br>
-                <label for="txtpassword" class="labels">Contraseñaaa</label>
+                <label for="txtpassword">Contraseña:</label>
                 <br>
-                <input type="password" id="txtpassword" name="txtpassword" class="input">
+                <input type="password" id="txtpassword" name="txtpassword" class="pwd">
                 <br>
-                <input type="submit" value="Iniciar Sesión" class="btn" maxlength="30" minlength="3">
+                <input type="submit" value="Iniciar Sesión" class="btn">
                 <br>
                 <br>
-                <a class="hiper" href="registro.php">¿No tienes una cuenta? ¡Regístrate!</a>
+                <a href="registro.php">¿No tienes una cuenta? ¡Regístrate!</a>
             </center>
         </fieldset>
     </form>
-
 </body>
 
 </html>
