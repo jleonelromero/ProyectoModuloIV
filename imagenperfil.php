@@ -44,6 +44,7 @@ echo "<center><h1 id='titulo'>$mensaje</h1></center>";
 
 
  ?>
+    <a href="perfil.php">Regresar atras</a>
 
 
 
