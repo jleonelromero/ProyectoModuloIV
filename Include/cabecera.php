@@ -63,7 +63,7 @@ $rol = ($r["nombre"]);
                                 if (file_exists($fotoPath)) {
                                     echo '<img  class="user-avatar rounded-circle" src="' . $fotoPath . '" >';
                                 } else {
-                                    echo '<img class="user-avatar rounded-circle" src="FotosPerfil/foto-porDefecto.png">';
+                                    echo '<img class="user-avatar rounded-circle" src="FotosPerfil/foto-porDefecto.png" width=>';
                                 }
                             } elseif ($rPers) {
                                 $tabla = "PersonaIndividual";

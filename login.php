@@ -19,9 +19,11 @@
                 <br>
                 <input type="text" id="txtusuario" name="txtusuario" class="input" maxlength="30" minlength="3">
                 <br>
-                <label for="txtpassword" class="labels">Contraseñaaa</label>
+                <br>
+                <label for="txtpassword" class="labels">Contraseña</label>
                 <br>
                 <input type="password" id="txtpassword" name="txtpassword" class="input">
+                <br>
                 <br>
                 <input type="submit" value="Iniciar Sesión" class="btn" maxlength="30" minlength="3">
                 <br>
