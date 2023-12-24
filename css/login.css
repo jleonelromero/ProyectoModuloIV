@@ -4,22 +4,59 @@
 }
 
 body {
-    background-color: rgb(231, 224, 224);
-    font-family: Roboto-Black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #474aec, #65b8e8, #6aaee8, #407aef);
+    animation: flow 30s linear infinite;
+    background-size: 300% 300%;
+    background-position: 0% 0%;
 }
 
-.img {
-    width: 300px;
+@keyframes flow {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
 }
 
 #login {
-    margin: auto;
-    border-color: white;
     border-radius: 30px;
-    width: 300px;
-    height: 100%;
-    background-color: rgb(116, 227, 247);
+    border-color: rgb(4, 8, 193, 0.5);
+    width: 360px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 20px rgb(4, 8, 193)
+}
 
+.login_img {
+    background-color: rgb(119, 222, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px 30px 0 0;
+    overflow: hidden;
+    margin-bottom: -30px;
+}
+
+.login_img img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.login_form {
+    padding: 25px;
+    background-color: rgba(119, 222, 255);
+    border-radius: 0 0 30px 30px;
 }
 
 .labels {
@@ -29,7 +66,7 @@ body {
 .input {
     width: 260px;
     height: 30px;
-    font-size: 16px;
+    font-size: 13px;
     text-align: left;
     padding-left: 10px;
     color: black;
@@ -41,7 +78,7 @@ body {
 }
 
 .input:hover {
-    box-shadow: inset -8px -8px 16px rgb(140, 151, 128);
+    box-shadow: inset -8px -8px 16px rgb(212, 216, 209);
 }
 
 .btn {
@@ -61,4 +98,5 @@ body {
 
 .hiper {
     text-decoration: none;
+    color: rgb(3, 0, 155);
 }
