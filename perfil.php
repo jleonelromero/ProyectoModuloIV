@@ -1,6 +1,6 @@
 <?php
 include 'Include/conexion.php';
-include'adcabe.php';
+include'Include/cabecera.php';
 $cod = $_SESSION["usuario"];
 $sqlInstitucion = "SELECT * FROM tbinstitucioneducativa WHERE idInstitucionEducativa = '$cod'";
 $fInst = mysqli_query($cn, $sqlInstitucion);

@@ -1,5 +1,5 @@
 <?php
-include("adcabe.php");
+include("Include/cabecera.php");
 require_once 'Include/conexion.php';
 $cod = $_SESSION["usuario"];
 $sqlInstitucion = "SELECT * FROM tbinstitucioneducativa WHERE idInstitucionEducativa = '$cod'";

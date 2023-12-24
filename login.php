@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
-    <!-- <link rel="stylesheet" href="css/estilo.css"> -->
     <link rel="stylesheet" href="css/login.css">
 </head>
 
@@ -13,21 +12,25 @@
     <form action="p_login.php" method="post">
         <fieldset id="login">
             <center>
-                <label for="txtusuario">Usuario:</label>
+                <a href="login.php">
+                    <img src="img/login.jpeg" class="img" alt="">
+                </a>
+                <label for="txtusuario" class="labels">Usuario</label>
                 <br>
-                <input type="text" id="txtusuario" name="txtusuario" class="txt">
+                <input type="text" id="txtusuario" name="txtusuario" class="input" maxlength="30" minlength="3">
                 <br>
-                <label for="txtpassword">Contraseña:</label>
+                <label for="txtpassword" class="labels">Contraseñaaa</label>
                 <br>
-                <input type="password" id="txtpassword" name="txtpassword" class="pwd">
+                <input type="password" id="txtpassword" name="txtpassword" class="input">
                 <br>
-                <input type="submit" value="Iniciar Sesión" class="btn">
+                <input type="submit" value="Iniciar Sesión" class="btn" maxlength="30" minlength="3">
                 <br>
                 <br>
-                <a href="registro.php">¿No tienes una cuenta? ¡Regístrate!</a>
+                <a class="hiper" href="registro.php">¿No tienes una cuenta? ¡Regístrate!</a>
             </center>
         </fieldset>
     </form>
+
 </body>
 
 </html>

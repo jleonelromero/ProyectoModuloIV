@@ -1,6 +1,6 @@
 
 <?php
-include'adcabe.php'
+include'Include/cabecera.php';
 ?>
 <div>asdasdasdasd</div>
 <div>asdasdasdasd</div>
