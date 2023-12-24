@@ -22,12 +22,20 @@ if ($rInst) {
     <table border="2">
         <tr>
             <td rowspan="11"> <a href="">
-                <img src="img/LogoUNJFSC.png" alt="" width="250">
+                <?php
+                    $fotoPath = "FotosPerfil/" . $rInst["idInstitucionEducativa"] . ".jpg";
+                    if (file_exists($fotoPath)) {
+                        echo '<img src="' . $fotoPath . '" width="150" height="180">';
+                    } else {
+                        echo '<img src="FotosPerfil/foto-porDefecto.png" width="150" height="180">';
+                    }
+                    ?>
             </a></td>
         </tr>
         <tr>
             <td>Codigo de la I.E</td>
-            <td><?php echo $rInst["codInstitucion"]; ?> </td>
+            <td>
+                <?php echo $rInst["codInstitucion"]; ?> </td>
         </tr>
         <tr>
             <td>Nombre de la Institución Educativa</td>
@@ -101,7 +109,15 @@ $r=mysqli_fetch_assoc($f);
         <table border="2">
         <tr>
             <td rowspan="10"> <a href="">
-                <img src="img/LogoUNJFSC.png" alt="" width="250">
+            <?php
+                    $fotoPath = "FotosPerfil/" . $rPers["idPersona"] . ".jpg";
+                    if (file_exists($fotoPath)) {
+                        echo '<img src="' . $fotoPath . '" width="150" height="180">';
+                    } else {
+                        echo '<img src="FotosPerfil/foto-porDefecto.png" width="250" height="180">';
+                    }
+                    ?>
+                <!-- <img src="img/LogoUNJFSC.png" alt="" width="250"> -->
             </a></td>
         </tr>
         <tr>
@@ -173,6 +189,8 @@ $r=mysqli_fetch_assoc($f);
 
 
     <a href="actualizar.php">Editar</a>
+    <a href="imagenperfil.php">Cambiar foto</a>
+
 
 
 

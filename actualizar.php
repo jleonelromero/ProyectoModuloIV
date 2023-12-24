@@ -26,9 +26,10 @@ if ($rInst) {
 
 <body>
     <?php include("Include/cabecera.php"); ?>
-    <form action="p_actualizar.php" method="post">
+    <form action="p_actualizar.php" method="post" >
         <?php if ($tabla === "InstitucionEducativa") { ?>
             <fieldset id="actualizar">
+                    
                 <label>1.- Codigo de la I.E.</label>
                 <input type="text" name="txtcodigo" value="<?php echo $rInst["codInstitucion"]; ?>" required>
                 <label>2.- Nombre de la Institución Educativa (*):</label>
