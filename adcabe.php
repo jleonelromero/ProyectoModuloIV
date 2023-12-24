@@ -58,8 +58,35 @@ $rol = ($r["nombre"]);
                         <a href="#" class="dropdown-toggle active" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 
                         <div class="  ">Bienvenido(a) <?php echo $r["nombre"]; ?>&nbsp;  &#160;</div>
-                        
-                        <img class="user-avatar rounded-circle" src="FotosPerfil/foto-porDefecto.png" alt="User Avatar">
+                        <?php
+                $sqlInstitucion = "SELECT * FROM tbinstitucioneducativa WHERE idInstitucionEducativa = '$cod'";
+                $fInst = mysqli_query($cn, $sqlInstitucion);
+                $rInst = mysqli_fetch_assoc($fInst);
+                $sqlPersona = "SELECT * FROM tbpersonaindividual WHERE idPersona = '$cod'";
+                $fPers = mysqli_query($cn, $sqlPersona);
+                $rPers = mysqli_fetch_assoc($fPers);
+                if ($rInst) {
+                    $tabla = "InstitucionEducativa";
+                    $fotoPath = "FotosPerfil/" . $rInst["idInstitucionEducativa"] . ".jpg";
+                    if (file_exists($fotoPath)) {
+                        echo '<img  class="user-avatar rounded-circle" src="' . $fotoPath . '" >';
+                    } else {
+                        echo '<img class="user-avatar rounded-circle" src="FotosPerfil/foto-porDefecto.png">';
+                    }
+                } elseif ($rPers) {
+                    $tabla = "PersonaIndividual";
+                    $fotoPath = "FotosPerfil/" . $rPers["idPersona"] . ".jpg";
+                    if (file_exists($fotoPath)) {
+                        echo '<img  class="user-avatar rounded-circle" src="' . $fotoPath . '" >';
+                    } else {
+                        echo '<img class="user-avatar rounded-circle" src="FotosPerfil/foto-porDefecto.png">';
+                    }
+                }
+
+                    
+                    ?>
+
+                        <!-- <img class="user-avatar rounded-circle" src="FotosPerfil/foto-porDefecto.png" alt="User Avatar"> -->
                         </a>
 
                         <div class="user-menu dropdown-menu">
