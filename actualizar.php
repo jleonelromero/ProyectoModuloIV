@@ -102,3 +102,7 @@ if ($rInst) {
 </body>
 
 </html>
+<?php
+
+include 'Include/footer.php';
+?>
