@@ -79,7 +79,16 @@ if ($rInst) {
 $r=mysqli_fetch_assoc($f);
 
             ?>    
-            <?php echo $r["nombre_provincia"]; ?>
+            <?php 
+            
+            if ($r == null) {
+            }else {
+                echo $r["nombre_provincia"];
+
+            }
+            
+            
+        ?>
         </td>
         <tr>
             <td> Distrito</td>
@@ -94,7 +103,14 @@ $r=mysqli_fetch_assoc($f);
 $r=mysqli_fetch_assoc($f);
 
             ?>    
-            <?php echo $r["nombre"]; ?>
+            <?php 
+            if ($r == null) {
+            }else {
+                echo $r["nombre"];
+
+            }
+            
+            ?>
         </td>
         </tr>
     </table>
@@ -157,7 +173,14 @@ $r=mysqli_fetch_assoc($f);
 $r=mysqli_fetch_assoc($f);
 
             ?>    
-            <?php echo $r["nombre_provincia"]; ?>
+            <?php 
+             if ($r == null) {
+            }else {
+                echo $r["nombre_provincia"];
+
+            }
+            
+             ?>
         </td>
         <tr>
             <td> Distrito</td>
@@ -172,7 +195,13 @@ $r=mysqli_fetch_assoc($f);
 $r=mysqli_fetch_assoc($f);
 
             ?>    
-            <?php echo $r["nombre"]; ?>
+            
+            <?php
+            if ($r == null) {
+            }else {
+                echo $r["nombre"];
+
+            } ?>
         </td>
         </tr>
     </table>
