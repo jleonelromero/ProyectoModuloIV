@@ -1,0 +1,74 @@
+@font-face {
+    font-family: "Roboto-Black";
+    src: url("../fonts/Roboto-Black.ttf");
+}
+
+body {
+    font-family: Roboto-Black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #474aec, #65b8e8, #6aaee8, #407aef);
+    animation: flow 30s linear infinite;
+    background-size: 300% 300%;
+    background-position: 0% 0%;
+}
+
+@keyframes flow {
+    0% {
+        background-position: 0% 0%;
+    }
+
+    50% {
+        background-position: 100% 100%;
+    }
+
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+.img {
+    width: 150px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.registro_option {
+    display: flex;
+}
+
+.registro_box {
+    border-radius: 30px;
+    text-align: center;
+    margin: 10px;
+    border: 6px solid white;
+    padding: 30px;
+    box-shadow: 0 0 30px rgba(4, 8, 193);
+    background-color: rgb(119, 222, 255);
+    height: 230px;
+}
+
+.registro_box p {
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 1.5;
+    max-width: 260px;
+    margin: 0 auto;
+    padding-bottom: 25px;
+}
+
+.registro_link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.separator {
+    width: 80px;
+}

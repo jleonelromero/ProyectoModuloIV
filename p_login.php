@@ -3,15 +3,16 @@ session_start();
 include("include/conexion.php");
 $usu = $_POST["txtusuario"];
 $pass = $_POST["txtpassword"];
-$sql = "SELECT idUsuario, correoLogin, tipoUsuario FROM (SELECT idInstitucionEducativa AS idUsuario, correo AS correoLogin, contraseña, '1' as tipoUsuario FROM tbinstitucioneducativa UNION ALL SELECT idpersona AS idUsuario, correo AS correoLogin, contraseña, '1' as tipoUsuario FROM tbpersonaindividual UNION ALL 
-SELECT idAdmin AS idUsuario, NULL AS correoLogin, contraseña, '2' AS tipoUsuario FROM tbadministrador) AS usuarios WHERE (correoLogin = '$usu' OR idUsuario = '$usu') AND contraseña = '$pass'";
+$sql = "SELECT idUsuario, correoLogin, contraseña FROM (SELECT idInstitucionEducativa AS idUsuario, correo AS correoLogin, contraseña FROM tbinstitucioneducativa UNION ALL SELECT idpersona AS idUsuario, correo AS correoLogin, contraseña FROM tbpersonaindividual UNION ALL SELECT idAdmin AS idUsuario, NULL AS correoLogin, contraseña FROM tbadministrador) AS usuarios WHERE correoLogin = '$usu' OR idUsuario = '$usu'";
 $fila = mysqli_query($cn, $sql);
 $r = mysqli_fetch_assoc($fila);
-$valor = $r["idUsuario"];
-if ($valor == null) {
-    header("Location: login.php");
-} else {
-    $_SESSION["usuario"] = $valor;
-    $_SESSION["auth"] = 1;
-    header("Location: principal.php");
+if ($r) {
+    $contraseña_hash = $r["contraseña"];
+    if (password_verify($pass, $contraseña_hash)) {
+        $_SESSION["usuario"] = $r["idUsuario"];
+        $_SESSION["auth"] = 1;
+        header("Location: principal.php");
+        exit();
+    }
 }
+header("Location: login.php");
