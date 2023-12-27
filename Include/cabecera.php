@@ -36,8 +36,8 @@ $rol = ($r["nombre"]);
         <header id="header" class="header">
             <div class="top-left">
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="./"> Proceso de Validación Electrónica - Proyecto Educativo Regional [PER]</a>
-                    <a class="navbar-brand hidden" href="./">Proceso de Validación Electrónica - Proyecto Educativo Regional [PER]</a>
+                    <a class="navbar-brand"> Proceso de Validación Electrónica - Proyecto Educativo Regional [PER]</a>
+                    <a class="navbar-brand hidden">Proceso de Validación Electrónica - Proyecto Educativo Regional [PER]</a>
                 </div>
             </div>
             <div class="top-right">
@@ -90,7 +90,7 @@ $rol = ($r["nombre"]);
                                 <a class="nav-link" href="perfil.php"><i class="fa-solid fa-circle-info"></i>Datos Personales</a>
                                 <a class="nav-link" href="cambiarpass.php"><i class="fa fa-lock"></i> Actualizar Contraseña</span></a>
                                 <a class="nav-link" href='sugerencias.php'><i class="fas fa-lightbulb"></i>Sugerencias</a>
-                                <a class="nav-link" href="#"><i class="fa fa-envelope"></i>Contáctenos</a>
+                                <a class="nav-link" href="contacto.php"><i class="fa fa-envelope"></i>Contáctenos</a>
                                 <a class="nav-link" href="cerrarsesion.php"><i class="fa-solid fa-right-from-bracket"></i>Cerrar sesion </a>
                             <?php } ?>
                         </div>
