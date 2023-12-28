@@ -16,10 +16,10 @@ if ($rInst) {
 
 ?>
 
-
+<link rel="stylesheet" href="css/perfil.css">
 <?php if ($tabla === "InstitucionEducativa") { ?>
 
-    <table border="2">
+    <table>
         <tr>
             <td rowspan="11"> <a href="">
                 <?php
@@ -122,7 +122,7 @@ $r=mysqli_fetch_assoc($f);
 
 
 
-        <table border="2">
+        <table  class="tbperfil">
         <tr>
             <td rowspan="10"> <a href="">
             <?php
@@ -216,10 +216,12 @@ $r=mysqli_fetch_assoc($f);
 
 
 
+<div class="cbtn">
+<a href="actualizar.php" class="botones"><i class="fa-solid fa-user-pen"></i> Editar</a>
+    <a href="imagenperfil.php" class="botones" ><i class="fa-solid fa-image-portrait"></i> Cambiar foto</a>
 
-    <a href="actualizar.php" class="botones"><i class="fa-solid fa-user-pen"></i>Editar</a>
-    <a href="imagenperfil.php"><i class="fa-solid fa-image-portrait"></i>Cambiar foto</a>
-
+</div>
+   
 
 
 
