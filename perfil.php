@@ -217,8 +217,8 @@ $r=mysqli_fetch_assoc($f);
 
 
 
-    <a href="actualizar.php">Editar</a>
-    <a href="imagenperfil.php">Cambiar foto</a>
+    <a href="actualizar.php" class="botones"><i class="fa-solid fa-user-pen"></i>Editar</a>
+    <a href="imagenperfil.php"><i class="fa-solid fa-image-portrait"></i>Cambiar foto</a>
 
 
 

@@ -26,4 +26,4 @@ if ($rInst) {
     $sql = "UPDATE tbpersonaindividual SET nombre = '$nombres', apellido = '$apellidos', edad = '$edad', dni = '$dni', idDistrito = '$distrito', estado = 1 WHERE idPersona = '$cod'";
 }
 mysqli_query($cn, $sql);
-header('location: principal.php');
+header('location: perfil.php');
