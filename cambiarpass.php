@@ -15,7 +15,7 @@ $r = mysqli_fetch_assoc($f);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
-    <link rel="stylesheet" href="css/actualizar.css">
+    <link rel="stylesheet" href="css/actualizarpass.css">
 </head>
 
 <body>
@@ -24,11 +24,11 @@ $r = mysqli_fetch_assoc($f);
         <label>Correo Electrónico :</label>
         <input type="email" name="txtcorreo" value="<?php echo $r["correo"]; ?>" required>
         <label>Antigua Contraseña :</label>
-        <input type="password" name="pass_antigua" required><br><br>
+        <input type="password" name="pass_antigua" required>
         <label>Nueva Contraseña :</label>
-        <input type="password" name="pass_nueva" required><br><br>
+        <input type="password" name="pass_nueva" required>
         <label>Confirmar Nueva Contraseña :</label>
-        <input type="password" name="pass_confirmar" required><br><br>
+        <input type="password" name="pass_confirmar" required>
         <input type="submit" value="Cambiar contraseña">
     </form>
 </body>

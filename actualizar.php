@@ -88,7 +88,8 @@ if ($rInst) {
                     ?>
                 </select>
                 <label>Distrito (*):</label>
-                <select name="ldistritos" class="selector" id="distrito"></select>
+                <select name="ldistritos" class="selector" id="distrito">
+                </select>
                 <input type="submit" class="btn-actualizar" value="Actualizar tus datos">
             </fieldset>
         <?php } ?>
