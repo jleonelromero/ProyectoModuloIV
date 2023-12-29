@@ -1,4 +1,5 @@
 <?php
+include("Include/auth.php");
 require_once 'Include/conexion.php';
 $cod = $_SESSION["usuario"];
 $archivo = $_FILES["archivo"]["tmp_name"];

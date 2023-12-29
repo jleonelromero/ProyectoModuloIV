@@ -1,5 +1,7 @@
 <?php
+include("Include/auth.php");
 include("Include/conexion.php");
+include("Include/cabecera.php");
 $cod = $_SESSION["usuario"];
 $sqlInstitucion = "SELECT * FROM tbinstitucioneducativa WHERE idInstitucionEducativa = '$cod'";
 $fInst = mysqli_query($cn, $sqlInstitucion);
@@ -21,14 +23,13 @@ if ($rInst) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
+    <link rel="stylesheet" href="css/actualizar.css">
 </head>
 
 <body>
-    <?php include("Include/cabecera.php"); ?>
-    <form action="p_actualizar.php" method="post" >
+    <form action="p_actualizar.php" method="post">
         <?php if ($tabla === "InstitucionEducativa") { ?>
             <fieldset id="actualizar">
-                    
                 <label>1.- Codigo de la I.E.</label>
                 <input type="text" name="txtcodigo" value="<?php echo $rInst["codInstitucion"]; ?>" required>
                 <label>2.- Nombre de la Institución Educativa (*):</label>
@@ -46,14 +47,12 @@ if ($rInst) {
                 <input type="text" name="txtdepartamento" value="Lima" disabled>
                 <label>Provincia (*):</label>
                 <select name="lprovincias" class="selector" id="provincia" required>
-                <option value="" disabled selected>Elige tu provincia</option>  
-
+                    <option value="" disabled selected>Elige tu provincia</option>
                     <?php
                     $sql = "SELECT * FROM tbprovincia";
                     $f = mysqli_query($cn, $sql);
                     while ($r = mysqli_fetch_array($f)) {
                     ?>
-
                         <option value="<?php echo $r["idProvincia"] ?>"><?php echo $r["nombre"]; ?></option>
                     <?php
                     }
@@ -62,9 +61,7 @@ if ($rInst) {
                 <label>Distrito (*):</label>
                 <select name="ldistritos" class="selector" id="distrito"></select>
                 <input type="submit" class="btn-actualizar" value="Actualizar tus datos">
-
             </fieldset>
-            
         <?php } elseif ($tabla === "PersonaIndividual") { ?>
             <fieldset id="actualizar">
                 <label>Nombres (*):</label>
@@ -79,8 +76,7 @@ if ($rInst) {
                 <input type="text" name="txtdepartamento" value="Lima" disabled>
                 <label>Provincia a la que perteneces (*):</label>
                 <select name="lprovincias" class="selector" id="provincia" required>
-                <option value="" disabled selected>Elige tu provincia</option>
-
+                    <option value="" disabled selected>Elige tu provincia</option>
                     <?php
                     $sql = "SELECT * FROM tbprovincia";
                     $f = mysqli_query($cn, $sql);

@@ -1,4 +1,5 @@
 <?php
+include("Include/auth.php");
 include("Include/conexion.php");
 $cod = $_SESSION["usuario"];
 $sqlInstitucion = "SELECT * FROM tbinstitucioneducativa WHERE idInstitucionEducativa = '$cod'";

@@ -28,7 +28,7 @@ $rol = ($r["nombre"]);
     <script type="text/javascript" src="https://cdn.jsdelivr.net/html5shiv/3.7.3/html5shiv.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/chartist@0.11.0/dist/chartist.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/jqvmap@1.5.1/dist/jqvmap.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/weathericons@2.1.0/css/weather-icons.css" rel="stylesheet"/>
+    <link href="https://cdn.jsdelivr.net/npm/weathericons@2.1.0/css/weather-icons.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -63,7 +63,7 @@ $rol = ($r["nombre"]);
                                 if (file_exists($fotoPath)) {
                                     echo '<img  class="user-avatar rounded-circle" src="' . $fotoPath . '" >';
                                 } else {
-                                    echo '<img class="user-avatar rounded-circle" src="FotosPerfil/foto-porDefecto.png" width=>';
+                                    echo '<img class="user-avatar rounded-circle" src="FotosPerfil/foto-porDefecto.png" width=150 height=150>';
                                 }
                             } elseif ($rPers) {
                                 $tabla = "PersonaIndividual";
@@ -87,10 +87,10 @@ $rol = ($r["nombre"]);
                                 <a class="nav-link" href="cerrarsesion.php"><i class="fa-solid fa-right-from-bracket"></i>Cerrar sesion </a>
                             <?php } else { ?>
                                 <a class="nav-link" href='principal.php'><i class="fas fa-home"></i> Principal</a>
-                                <a class="nav-link" href="perfil.php"><i class="fa-solid fa-circle-info"></i>Datos Personales</a>
-                                <a class="nav-link" href="cambiarpass.php"><i class="fa fa-lock"></i> Actualizar Contraseña</span></a>
+                                <a class="nav-link" href='perfil.php'><i class="fa-solid fa-circle-info"></i>Datos Personales</a>
+                                <a class="nav-link" href='cambiarpass.php'><i class="fa fa-lock"></i> Actualizar Contraseña</span></a>
                                 <a class="nav-link" href='sugerencias.php'><i class="fas fa-lightbulb"></i>Sugerencias</a>
-                                <a class="nav-link" href="contacto.php"><i class="fa fa-envelope"></i>Contáctenos</a>
+                                <a class="nav-link" href='contacto.php'><i class="fa fa-envelope"></i>Contáctenos</a>
                                 <a class="nav-link" href="cerrarsesion.php"><i class="fa-solid fa-right-from-bracket"></i>Cerrar sesion </a>
                             <?php } ?>
                         </div>
