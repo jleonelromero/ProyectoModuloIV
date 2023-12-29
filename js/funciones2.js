@@ -1,21 +1,22 @@
 function modificar(arreglo){
     cadena =arreglo.split(',');
-    alert(cadena);
+    // alert(cadena);
     $("#id_").val(cadena[0]);
-    $("#nombre_").val(cadena[1]);
+    $("#nombre_").text(cadena[1]);
+    $("#correo_").text(cadena[2]);
+
 }
-$('#modificar_').click(function(){
+$('#enviar_').click(function(){
     let subir = $('#form_').serialize();
     // alert(subir);
     $.ajax({
-        url: '../p_sugerencia.php',
-        type:"Post",
+        url: 'p_subir.php',
+        type: "Post",
         data: subir,
 
         success:function (variable) {
-            $('#tbadm').load('../modal/ventana.php #tbadm');
             // alert("exitoso");
-            $('#modificar').modal('hide');
+            $('#responder').modal('hide');
             $('body').removeClass('modal-open');
             $('.modal-backdrop').remove();
             

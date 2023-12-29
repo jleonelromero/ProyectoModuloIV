@@ -45,8 +45,8 @@ $rol = ($r["nombre"]);
                     <div class="header-left">
                     </div>
                     <div class="user-area dropdown float-right">
-                        <a href="#" class="dropdown-toggle active" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <div class="  ">Bienvenido(a) <?php echo $r["nombre"]; ?>&nbsp; &#160;</div>
+                        <a href="#"  style="color: #3498db; text-decoration: none;" class="dropdown-toggle active" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <div class="hola" st>Bienvenido(a) <?php echo $r["nombre"]; ?>&nbsp; &#160;</div>
                             <?php
                             $sqlInstitucion = "SELECT * FROM tbinstitucioneducativa WHERE idInstitucionEducativa = '$cod'";
                             $fInst = mysqli_query($cn, $sqlInstitucion);
@@ -84,6 +84,8 @@ $rol = ($r["nombre"]);
                                 <a class="nav-link" href='consolidado.php'><i class="fas fa-chart-bar"></i> Consolidado</a>
                                 <a class="nav-link" href='reporte.php'><i class="fas fa-users"></i> Reportes - Personas</a>
                                 <a class="nav-link" href='reporte.php'><i class="fas fa-users"></i>Reportes - I.E</a>
+                                <a class="nav-link" href='reportescontac.php'><i class="fas fa-users"></i>Reportes contactos</a>
+
                                 <a class="nav-link" href='busqueda.php'><i class="fas fa-search"></i> Búsquedas</a>
                                 <a class="nav-link" href="cerrarsesion.php"><i class="fa-solid fa-right-from-bracket"></i>Cerrar sesion </a>
                             <?php } else { ?>
@@ -91,7 +93,7 @@ $rol = ($r["nombre"]);
                                 <a class="nav-link" href='perfil.php'><i class="fa-solid fa-circle-info"></i>Datos Personales</a>
                                 <a class="nav-link" href='cambiarpass.php'><i class="fa fa-lock"></i> Actualizar Contraseña</span></a>
                                 <a class="nav-link" href='matriz.php'><i class="fas fa-lightbulb"></i>Sugerencias</a>
-                                <a class="nav-link" href='contacto.php'><i class="fa fa-envelope"></i>Contáctenos</a>
+                                <a class="nav-link" href='contactenos.php'><i class="fa fa-envelope"></i>Contáctenos</a>
                                 <a class="nav-link" href="cerrarsesion.php"><i class="fa-solid fa-right-from-bracket"></i>Cerrar sesion </a>
                             <?php } ?>
                         </div>
