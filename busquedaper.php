@@ -25,7 +25,7 @@ include("Include/cabecera.php");
 
 <div class="col-xs-12">
       <br>
-		<h1>Lista de instituciones </h1>
+		<h1>Lista de usuarios  </h1>
     <br>
 		<div>
     
@@ -70,8 +70,8 @@ if(isset($_GET['enviar'])){
 			</form>
       <div class="container-fluid">
   <form class="d-flex">
-      <input class="form-control me-2 light-table-filter" data-table="table_id" type="text" 
-      placeholder="Buscar  instituciones">
+      <input class="form-control me-2 light-table-filter" data-table="table_idd" type="text" 
+      placeholder="Buscar">
       <hr>
       </form>
   </div>
@@ -79,14 +79,14 @@ if(isset($_GET['enviar'])){
   <br>
 
  
-      <table class="table table-striped table-dark table_id ">
+      <table class="table table-striped table-dark table_idd">
 
                    
                          <thead>    
                          <tr>
                         <th>Nombre</th>
                         <th>Correo</th>
-                        <th>Numero de I.E</th>
+                        <th>Numero de DNI</th>
          
                         </tr>
                         </thead>
@@ -94,8 +94,8 @@ if(isset($_GET['enviar'])){
 
 				<?php
 
-$SQL="SELECT tbinstitucioneducativa.idInstitucionEducativa, tbinstitucioneducativa.codInstitucion, tbinstitucioneducativa.correo, tbinstitucioneducativa.nombre
- FROM tbinstitucioneducativa $where";
+$SQL="SELECT tbpersonaindividual.idPersona, tbpersonaindividual.nombre, tbpersonaindividual.apellido, tbpersonaindividual.dni
+FROM tbpersonaindividual $where";
 $dato = mysqli_query($cn, $SQL);
 
 if($dato -> num_rows >0){
@@ -104,8 +104,8 @@ if($dato -> num_rows >0){
 ?>
 <tr>
 <td><?php echo $fila['nombre']; ?></td>
-<td><?php echo $fila['correo']; ?></td>
-<td><?php echo $fila['codInstitucion']; ?></td>
+<td><?php echo $fila['apellido']; ?></td>
+<td><?php echo $fila['dni']; ?></td>
 
 
 </tr>
@@ -132,12 +132,11 @@ if($dato -> num_rows >0){
   </table>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.js"></script>
-<script src="js/buscador.js"></script>
+<script src="js/buscador2.js"></script>
 
 
 
 
-</html>
-<?php
+</html><?php
 include ("Include/footer.php")
 ?>
