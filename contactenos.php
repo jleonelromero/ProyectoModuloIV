@@ -1,3 +1,7 @@
+<?php
+
+include 'Include/cabecera.php'
+?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -83,7 +87,9 @@
     </style>
 </head>
 <body>
-
+<br><br><br>
+<br><br>
+<br><br>
 <div class="container">
     <h1>Contáctenos</h1>
 
@@ -109,13 +115,19 @@
             <option value="sugerencia">Sugerencia</option>
             <option value="otros">Otros</option>
         </select>
+        <style>
+            textarea {
+width: 100%;
+height: 80px; 
+padding: 10px;
+box-sizing: border-box;
+margin-bottom: 10px;
+resize: none; 
+}
+        </style>
         <textarea name="mensaje" id="" cols="30" rows="10" placeholder="Ingrese su mensaje" required maxlength="200"></textarea>
 
-        <div class="checkbox-container">
-            <input type="checkbox" name="consentimiento" id="consentimiento" required>
-            <label for="consentimiento">Acepto dar mi consentimiento para el uso de mis datos personales.</label>
-        </div>
-
+        
         <br>
         <br>
 
@@ -125,3 +137,6 @@
 
 </body>
 </html>
+<?php
+include'Include/footer.php';
+?>
