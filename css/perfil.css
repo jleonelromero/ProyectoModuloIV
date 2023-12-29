@@ -1,39 +1,71 @@
-body{
-    
-}
-table{
-
- text-align: start;
- margin: auto;
- font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
- font-size: 18px;
- 
-}
-td{
-    padding-left: 30px;
-    border: solid rgba(255,255,255,.1);
-}
-img{
-    border-radius: 80px 80px 80px 80px;
-}
-.cbtn{
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    margin-top: auto;
+    padding: 0;
     display: flex;
-    margin-left: 40%;
+    justify-content: center;
+    align-items: center;
 }
-.botones{
-   
-    border: 1px solid red;
-    border-radius: 5px;
-    padding: 5px 5px;
-    background-color: #ca0b0b;
-    color: white;
-    margin-top: 30px;
-    margin-left: 10px;
+
+.container {
+    width: 520px;
+    text-align: center;
 }
-.botones:hover{
 
-    cursor: pointer;
-    color: white;
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
 
-    background-color: #f01212;
+.profile img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 30px;
+}
+
+.profile-info {
+    width: 100%;
+    text-align: left;
+}
+.profile-info h2 {
+    margin-bottom: 20px;
+}
+
+.profile-info strong {
+    margin-right: 8px;
+    font-weight: bold;
+}
+
+.profile-info p.error-message {
+    color: red;
+    font-style: italic;
+    font-size: 16px;
+}
+
+.btn-container {
+    text-align: center;
+    margin-top: -5px;
+    margin-bottom: -20px;
+}
+
+.btn {
+    display: inline-block;
+    margin: 2px 15px;
+    padding: 8px 16px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #333;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #555;
 }

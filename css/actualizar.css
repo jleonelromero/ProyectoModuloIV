@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 520px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+#actualizar {
+    width: 100%;
+    max-width: 500px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#actualizar label {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+#actualizar input[type="text"],
+#actualizar select {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+#actualizar select {
+    appearance: none;
+}
+
+#actualizar input[type="submit"] {
+    display: inline-block;
+    padding: 12px 24px;
+    margin-top: 20px;
+    margin-bottom: -80px;
+    color: #fff;
+    background-color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#actualizar input[type="submit"]:hover {
+    background-color: #555;
+}
+
+.error-message {
+    color: red;
+    margin-top: 5px;
+    font-size: 14px;
+}

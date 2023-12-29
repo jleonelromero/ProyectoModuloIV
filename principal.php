@@ -10,7 +10,6 @@ $fPers = mysqli_query($cn, $sqlPersona);
 $rPers = mysqli_fetch_assoc($fPers);
 if ($rInst) {
     $tabla = "InstitucionEducativa";
-    
 } elseif ($rPers) {
     $tabla = "PersonaIndividual";
 }
@@ -29,21 +28,21 @@ if ($rInst) {
 </head>
 <body>
     <br>
-    
-<?php
+    <?php
 
-if (isset($rInst['estado']) && $rInst['estado'] == 0 || isset($rPers['estado']) && $rPers['estado'] == 0) {
-    
-    echo'<script src="js/abrir.js"></script> ';
-} else {
-    echo "hola";
-}
+    if (isset($rInst['estado']) && $rInst['estado'] == 0 || isset($rPers['estado']) && $rPers['estado'] == 0) {
+        // Código cuando el estado es 0
+        echo "llenardatos";
+    } else {
+        echo "hola";
+    }
+    ?>
 
-?>
     <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
 </body>
-<?php
-
-include 'Include/footer.php' ?>
 
 </html>
+
+<?php
+include 'Include/footer.php'
+?>

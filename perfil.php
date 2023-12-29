@@ -1,6 +1,6 @@
 <?php
 include 'Include/conexion.php';
-include'Include/cabecera.php';
+include 'Include/cabecera.php';
 $cod = $_SESSION["usuario"];
 $sqlInstitucion = "SELECT * FROM tbinstitucioneducativa WHERE idInstitucionEducativa = '$cod'";
 $fInst = mysqli_query($cn, $sqlInstitucion);
@@ -13,227 +13,104 @@ if ($rInst) {
 } elseif ($rPers) {
     $tabla = "PersonaIndividual";
 }
-
 ?>
 
-<link rel="stylesheet" href="css/perfil.css">
-<?php if ($tabla === "InstitucionEducativa") { ?>
+<!DOCTYPE html>
+<html lang="en">
 
-    <table>
-        <tr>
-            <td rowspan="11"> <a href="">
-                <?php
-                    $fotoPath = "FotosPerfil/" . $rInst["idInstitucionEducativa"] . ".jpg";
-                    if (file_exists($fotoPath)) {
-                        echo '<img src="' . $fotoPath . '" width="150" height="180">';
-                    } else {
-                        echo '<img src="FotosPerfil/foto-porDefecto.png" width="150" height="180">';
-                    }
-                    ?>
-            </a></td>
-        </tr>
-        <tr>
-            <td>Codigo de la I.E</td>
-            <td>
-                <?php echo $rInst["codInstitucion"]; ?> </td>
-        </tr>
-        <tr>
-            <td>Nombre de la Institución Educativa</td>
-        <td><?php echo $rInst["nombre"]; ?></td>
-    </tr>
-        <td>Email:</td>
-        <td><?php echo $rInst["correo"]; ?></td>
-       
-        <tr>
-            <td>Director(a) Responsable</td>
-            <td><?php echo $rInst["direcResponsable"]; ?></td>
-        </tr>
-        <tr>
-            <td>Nro. de Alumnos</td>
-            <td><?php echo $rInst["numAlumnos"]; ?></td>
-        </tr>
-        <tr>
-            <td>Nro. de Docentes</td>
-            <td><?php echo $rInst["numDocentes"]; ?></td>
-        </tr>
-        <tr>
-            <td>Nro. de Administrativos</td>
-            <td> <?php echo $rInst["numAdministrativos"]; ?></td>
-        </tr>
-        <tr>
-            <td>Departamento:</td>
-            <td>
-                Lima
-            </td>
-        </tr>
-        <td>Provincia :</td>
-        <td>
-        <?php
-            $sql = "SELECT dis.nombre AS nombre_distrito, prov.nombre AS nombre_provincia, tbpe.idDistrito
-            FROM tbinstitucioneducativa tbpe
-            JOIN tbdistrito dis ON tbpe.idDistrito = dis.idDistrito
-            JOIN tbprovincia prov ON dis.idProvincia = prov.idProvincia
-            WHERE tbpe.idInstitucionEducativa = $cod;
-            ";
-            $f = mysqli_query($cn, $sql);
-$r=mysqli_fetch_assoc($f);
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="css/perfil.css">
+</head>
 
-            ?>    
-            <?php 
-            
-            if ($r == null) {
-            }else {
-                echo $r["nombre_provincia"];
+<body>
+    <div class="container">
+        <?php if ($tabla === "InstitucionEducativa") { ?>
+            <div class="profile">
+                <img src="<?php echo (file_exists($fotoPath)) ? $fotoPath : 'FotosPerfil/foto-porDefecto.png'; ?>" alt="Foto de perfil">
+                <div class="profile-info">
+                    <h2><?php echo $rInst["nombre"]; ?></h2>
+                    <p><strong>Código de la I.E:</strong><?php echo (!empty($rInst["codInstitucion"])) ? $rInst["codInstitucion"] : '<span class="error-message">¡Actualiza tus datos!</span>'; ?></p>
+                    <p><strong>Nombre de la Institución Educativa :</strong><?php echo $rInst["nombre"]; ?></p>
+                    <p><strong>Email :</strong><?php echo $rInst["correo"]; ?></p>
+                    <p><strong>Director(a) Responsable :</strong><?php echo $rInst["direcResponsable"]; ?></p>
+                    <p><strong>Nro. de Alumnos :</strong><?php echo $rInst["numAlumnos"]; ?></p>
+                    <p><strong>Nro. de Docentes :</strong><?php echo $rInst["numDocentes"]; ?></p>
+                    <p><strong>Nro. de Administrativos :</strong><?php echo $rInst["numAdministrativos"]; ?></p>
+                    <p><strong>Departamento :</strong>Lima</p>
+                    <p><strong>Provincia :</strong>
+                        <?php
+                        $sql = "SELECT prov.nombre AS provincia FROM tbdistrito dis JOIN tbprovincia prov ON dis.idProvincia = prov.idProvincia JOIN tbinstitucioneducativa inst ON inst.idDistrito = dis.idDistrito WHERE inst.idInstitucionEducativa = '$cod';";
+                        $f = mysqli_query($cn, $sql);
+                        $r = mysqli_fetch_assoc($f);
+                        if ($r) {
+                            echo $r["provincia"];
+                        } else {
+                            echo '<span class="error-message">¡Actualiza tus datos!</span>';
+                        }
+                        ?>
+                    </p>
+                    <p><strong>Distrito :</strong>
+                        <?php
+                        $sql = "SELECT dis.nombre FROM tbdistrito dis JOIN tbinstitucioneducativa inst ON dis.idDistrito = inst.idDistrito WHERE inst.idInstitucionEducativa = $cod;";
+                        $f = mysqli_query($cn, $sql);
+                        $r = mysqli_fetch_assoc($f);
+                        if ($r) {
+                            echo $r["nombre"];
+                        } else {
+                            echo '<span class="error-message">¡Actualiza tus datos!</span>';
+                        }
+                        ?>
+                    </p>
+                </div>
+            </div>
+        <?php } elseif ($tabla === "PersonaIndividual") { ?>
+            <div class="profile">
+                <img src="<?php echo (file_exists($fotoPath)) ? $fotoPath : 'FotosPerfil/foto-porDefecto.png'; ?>" alt="Foto de perfil">
+                <div class="profile-info">
+                    <h2><?php echo $rPers["nombre"] . ' ' . $rPers["apellido"]; ?></h2>
+                    <p><strong>Email :</strong><?php echo $rPers["correo"]; ?></p>
+                    <p><strong>Nro. DNI :</strong><?php echo (!empty($rPers["dni"])) ? $rPers["dni"] : '<span class="error-message">¡Actualiza tus datos!</span>'; ?></p>
+                    <p><strong>Edad :</strong><?php echo (!empty($rPers["edad"])) ? $rPers["edad"] : '<span class="error-message">¡Actualiza tus datos!</span>'; ?></p>
+                    <p><strong>Departamento :</strong>Lima</p>
+                    <p><strong>Provincia :</strong>
+                        <?php
+                        $sql = "SELECT prov.nombre AS provincia FROM tbdistrito dis JOIN tbprovincia prov ON dis.idProvincia = prov.idProvincia JOIN tbpersonaindividual pers ON pers.idDistrito = dis.idDistrito WHERE pers.idPersona = '$cod';";
+                        $f = mysqli_query($cn, $sql);
+                        $r = mysqli_fetch_assoc($f);
+                        if ($r) {
+                            echo $r["provincia"];
+                        } else {
+                            echo '<span class="error-message">¡Actualiza tus datos!</span>';
+                        }
+                        ?>
+                    </p>
+                    <p><strong>Distrito :</strong>
+                        <?php
+                        $sql = "SELECT dis.nombre FROM tbdistrito dis JOIN tbpersonaindividual tbpe ON dis.idDistrito = tbpe.idDistrito WHERE tbpe.idPersona = $cod;";
+                        $f = mysqli_query($cn, $sql);
+                        $r = mysqli_fetch_assoc($f);
+                        if ($r) {
+                            echo $r["nombre"];
+                        } else {
+                            echo '<span class="error-message">¡Actualiza tus datos!</span>';
+                        }
+                        ?>
+                    </p>
+                </div>
+            </div>
+        <?php } ?>
+        <div class="btn-container">
+            <a href="actualizar.php" class="btn">Editar</a>
+            <a href="imagenperfil.php" class="btn">Cambiar foto</a>
+        </div>
+    </div>
+</body>
 
-            }
-            
-            
-        ?>
-        </td>
-        <tr>
-            <td> Distrito</td>
-        <td>
-        <?php
-            $sql = "SELECT dis.nombre, tbpe.idDistrito
-            FROM tbdistrito dis
-            JOIN tbinstitucioneducativa tbpe ON dis.idDistrito = tbpe.idDistrito
-            WHERE tbpe.idInstitucionEducativa = $cod;
-            ";
-            $f = mysqli_query($cn, $sql);
-$r=mysqli_fetch_assoc($f);
-
-            ?>    
-            <?php 
-            if ($r == null) {
-            }else {
-                echo $r["nombre"];
-
-            }
-            
-            ?>
-        </td>
-        </tr>
-    </table>
-
-
-
-    <?php } elseif ($tabla === "PersonaIndividual") { ?>
-
-
-
-
-        <table  class="tbperfil">
-        <tr>
-            <td rowspan="10"> <a href="">
-            <?php
-                    $fotoPath = "FotosPerfil/" . $rPers["idPersona"] . ".jpg";
-                    if (file_exists($fotoPath)) {
-                        echo '<img src="' . $fotoPath . '" width="150" height="180">';
-                    } else {
-                        echo '<img src="FotosPerfil/foto-porDefecto.png" width="250" height="180">';
-                    }
-                    ?>
-                <!-- <img src="img/LogoUNJFSC.png" alt="" width="250"> -->
-            </a></td>
-        </tr>
-        <tr>
-            <td>Nombre</td>
-            <td><?php echo $rPers["nombre"]; ?> </td>
-        </tr>
-        <tr>
-            <td>Apellidos</td>
-        <td><?php echo $rPers["apellido"]; ?></td>
-    </tr>
-        <td>Email:</td>
-        <td><?php echo $rPers["correo"]; ?></td>
-        <tr>
-            <td>Nro. DNI</td>
-            <td><?php echo $rPers["dni"]; ?></td>
-        </tr>
-        <tr>
-            <td>Edad</td>
-            <td><?php echo $rPers["edad"]; ?></td>
-        </tr>
-        <tr>
-            <td>Departamento:</td>
-            <td>
-                Lima
-            </td>
-        </tr>
-        <td>Provincia :</td>
-        <td>
-        <?php
-            $sql = "SELECT dis.nombre AS nombre_distrito, prov.nombre AS nombre_provincia, tbpe.idDistrito
-            FROM tbpersonaindividual tbpe
-            JOIN tbdistrito dis ON tbpe.idDistrito = dis.idDistrito
-            JOIN tbprovincia prov ON dis.idProvincia = prov.idProvincia
-            WHERE tbpe.idPersona = $cod;
-            ";
-            $f = mysqli_query($cn, $sql);
-$r=mysqli_fetch_assoc($f);
-
-            ?>    
-            <?php 
-             if ($r == null) {
-            }else {
-                echo $r["nombre_provincia"];
-
-            }
-            
-             ?>
-        </td>
-        <tr>
-            <td> Distrito</td>
-        <td>
-        <?php
-            $sql = "SELECT dis.nombre, tbpe.idDistrito
-            FROM tbdistrito dis
-            JOIN tbpersonaindividual tbpe ON dis.idDistrito = tbpe.idDistrito
-            WHERE tbpe.idPersona = $cod;
-            ";
-            $f = mysqli_query($cn, $sql);
-$r=mysqli_fetch_assoc($f);
-
-            ?>    
-            
-            <?php
-            if ($r == null) {
-            }else {
-                echo $r["nombre"];
-
-            } ?>
-        </td>
-        </tr>
-    </table>
-    <?php } ?>
-
-
-
-
-
-
-
-
-
-
-<div class="cbtn">
-<a href="actualizar.php" class="botones"><i class="fa-solid fa-user-pen"></i> Editar</a>
-    <a href="imagenperfil.php" class="botones" ><i class="fa-solid fa-image-portrait"></i> Cambiar foto</a>
-
-</div>
-   
-
-
-
-
-
-
-
-
-
-
+</html>
 
 <?php
-
 include 'Include/footer.php'
 ?>
