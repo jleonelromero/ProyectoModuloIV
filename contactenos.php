@@ -87,7 +87,7 @@
 <div class="container">
     <h1>Contáctenos</h1>
 
-    <form action="#" method="post">
+    <form action="p_contac.php" method="post">
         <label for="nombre">Nombre:</label>
         <input type="text" id="nombre" name="nombre" required>
 
@@ -109,10 +109,11 @@
             <option value="sugerencia">Sugerencia</option>
             <option value="otros">Otros</option>
         </select>
+        <textarea name="mensaje" id="" cols="30" rows="10" placeholder="Ingrese su mensaje" required maxlength="200"></textarea>
 
         <div class="checkbox-container">
             <input type="checkbox" name="consentimiento" id="consentimiento" required>
-            <label for="consentimiento">He leído y acepto dar mi consentimiento para el uso de mis datos personales.</label>
+            <label for="consentimiento">Acepto dar mi consentimiento para el uso de mis datos personales.</label>
         </div>
 
         <br>

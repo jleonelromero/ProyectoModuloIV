@@ -27,14 +27,14 @@ if ($rInst) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
 </head>
-
 <body>
     <br>
+    
 <?php
 
 if (isset($rInst['estado']) && $rInst['estado'] == 0 || isset($rPers['estado']) && $rPers['estado'] == 0) {
-    // Código cuando el estado es 0
-    echo "llenardatos";
+    
+    echo'<script src="js/abrir.js"></script> ';
 } else {
     echo "hola";
 }
