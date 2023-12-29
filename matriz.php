@@ -1,5 +1,9 @@
+<?php
+
+?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -47,7 +51,7 @@
 		</tr>
 		<tr>
 			<td rowspan="23">
-			<a href=""> <img src="img/edit_text.png" width="27" alt=""></a>	
+			<a type="button" class="btn btn-outline-success"  data-bs-toggle="modal" data-bs-target="#sugerencia" > <img src="img/edit_text.png" width="27" alt=""></a>	
 			1. ASEGURAR una educación de calidad con equidad, innovadora, sin exclusión social que desarrolle plenamente las capacidades del estudiante con la participación activa y comprometida del docente y la sociedad.</td>
 			<td rowspan="7">
 			<a href=""> <img src="img/edit_text.png" width="27" alt=""></a>

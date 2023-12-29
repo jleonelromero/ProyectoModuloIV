@@ -13,157 +13,171 @@ if ($rInst) {
 } elseif ($rPers) {
     $tabla = "PersonaIndividual";
 }
+?>
 
-if ($tabla === "InstitucionEducativa") { ?>
-    <table border="2">
-        <tr>
-            <td rowspan="11"> <a href="">
-                    <?php
-                    $fotoPath = "FotosPerfil/" . $rInst["idInstitucionEducativa"] . ".jpg";
-                    if (file_exists($fotoPath)) {
-                        echo '<img src="' . $fotoPath . '" width="150" height="180">';
-                    } else {
-                        echo '<img src="FotosPerfil/foto-porDefecto.png" width="150" height="180">';
-                    }
-                    ?>
-                </a></td>
-        </tr>
-        <tr>
-            <td>Codigo de la I.E</td>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <?php if ($tabla === "InstitucionEducativa") { ?>
+        <table border="2">
+            <tr>
+                <td rowspan="11"> <a href="">
+                        <?php
+                        $fotoPath = "FotosPerfil/" . $rInst["idInstitucionEducativa"] . ".jpg";
+                        if (file_exists($fotoPath)) {
+                            echo '<img src="' . $fotoPath . '" width="150" height="180">';
+                        } else {
+                            echo '<img src="FotosPerfil/foto-porDefecto.png" width="150" height="180">';
+                        }
+                        ?>
+                    </a></td>
+            </tr>
+            <tr>
+                <td>Codigo de la I.E</td>
+                <td>
+                    <?php echo $rInst["codInstitucion"]; ?> </td>
+            </tr>
+            <tr>
+                <td>Nombre de la Institución Educativa</td>
+                <td><?php echo $rInst["nombre"]; ?></td>
+            </tr>
+            <td>Email:</td>
+            <td><?php echo $rInst["correo"]; ?></td>
+            <tr>
+                <td>Director(a) Responsable</td>
+                <td><?php echo $rInst["direcResponsable"]; ?></td>
+            </tr>
+            <tr>
+                <td>Nro. de Alumnos</td>
+                <td><?php echo $rInst["numAlumnos"]; ?></td>
+            </tr>
+            <tr>
+                <td>Nro. de Docentes</td>
+                <td><?php echo $rInst["numDocentes"]; ?></td>
+            </tr>
+            <tr>
+                <td>Nro. de Administrativos</td>
+                <td> <?php echo $rInst["numAdministrativos"]; ?></td>
+            </tr>
+            <tr>
+                <td>Departamento:</td>
+                <td>
+                    Lima
+                </td>
+            </tr>
+            <td>Provincia :</td>
             <td>
-                <?php echo $rInst["codInstitucion"]; ?> </td>
-        </tr>
-        <tr>
-            <td>Nombre de la Institución Educativa</td>
-            <td><?php echo $rInst["nombre"]; ?></td>
-        </tr>
-        <td>Email:</td>
-        <td><?php echo $rInst["correo"]; ?></td>
-        <tr>
-            <td>Director(a) Responsable</td>
-            <td><?php echo $rInst["direcResponsable"]; ?></td>
-        </tr>
-        <tr>
-            <td>Nro. de Alumnos</td>
-            <td><?php echo $rInst["numAlumnos"]; ?></td>
-        </tr>
-        <tr>
-            <td>Nro. de Docentes</td>
-            <td><?php echo $rInst["numDocentes"]; ?></td>
-        </tr>
-        <tr>
-            <td>Nro. de Administrativos</td>
-            <td> <?php echo $rInst["numAdministrativos"]; ?></td>
-        </tr>
-        <tr>
-            <td>Departamento:</td>
-            <td>
-                Lima
-            </td>
-        </tr>
-        <td>Provincia :</td>
-        <td>
-            <?php
-            $sql = "SELECT dis.nombre AS nombre_distrito, prov.nombre AS nombre_provincia, tbpe.idDistrito
+                <?php
+                $sql = "SELECT dis.nombre AS nombre_distrito, prov.nombre AS nombre_provincia, tbpe.idDistrito
             FROM tbinstitucioneducativa tbpe
             JOIN tbdistrito dis ON tbpe.idDistrito = dis.idDistrito
             JOIN tbprovincia prov ON dis.idProvincia = prov.idProvincia
             WHERE tbpe.idInstitucionEducativa = $cod;
             ";
-            $f = mysqli_query($cn, $sql);
-            $r = mysqli_fetch_assoc($f);
-            ?>
-            <?php echo $r["nombre_provincia"]; ?>
-        </td>
-        <tr>
-            <td> Distrito</td>
-            <td>
-                <?php
-                $sql = "SELECT dis.nombre, tbpe.idDistrito
+                $f = mysqli_query($cn, $sql);
+                $r = mysqli_fetch_assoc($f);
+                ?>
+                <?php echo $r["nombre_provincia"]; ?>
+            </td>
+            <tr>
+                <td> Distrito</td>
+                <td>
+                    <?php
+                    $sql = "SELECT dis.nombre, tbpe.idDistrito
             FROM tbdistrito dis
             JOIN tbinstitucioneducativa tbpe ON dis.idDistrito = tbpe.idDistrito
             WHERE tbpe.idInstitucionEducativa = $cod;
             ";
-                $f = mysqli_query($cn, $sql);
-                $r = mysqli_fetch_assoc($f);
-                ?>
-                <?php echo $r["nombre"]; ?>
-            </td>
-        </tr>
-    </table>
-<?php } elseif ($tabla === "PersonaIndividual") { ?>
-    <table border="2">
-        <tr>
-            <td rowspan="10"> <a href="">
-                    <?php
-                    $fotoPath = "FotosPerfil/" . $rPers["idPersona"] . ".jpg";
-                    if (file_exists($fotoPath)) {
-                        echo '<img src="' . $fotoPath . '" width="150" height="180">';
-                    } else {
-                        echo '<img src="FotosPerfil/foto-porDefecto.png" width="250" height="180">';
-                    }
+                    $f = mysqli_query($cn, $sql);
+                    $r = mysqli_fetch_assoc($f);
                     ?>
-                    <!-- <img src="img/LogoUNJFSC.png" alt="" width="250"> -->
-                </a></td>
-        </tr>
-        <tr>
-            <td>Nombre</td>
-            <td><?php echo $rPers["nombre"]; ?> </td>
-        </tr>
-        <tr>
-            <td>Apellidos</td>
-            <td><?php echo $rPers["apellido"]; ?></td>
-        </tr>
-        <td>Email:</td>
-        <td><?php echo $rPers["correo"]; ?></td>
-        <tr>
-            <td>Nro. DNI</td>
-            <td><?php echo $rPers["dni"]; ?></td>
-        </tr>
-        <tr>
-            <td>Edad</td>
-            <td><?php echo $rPers["edad"]; ?></td>
-        </tr>
-        <tr>
-            <td>Departamento:</td>
+                    <?php echo $r["nombre"]; ?>
+                </td>
+            </tr>
+        </table>
+    <?php } elseif ($tabla === "PersonaIndividual") { ?>
+        <table border="2">
+            <tr>
+                <td rowspan="10"> <a href="">
+                        <?php
+                        $fotoPath = "FotosPerfil/" . $rPers["idPersona"] . ".jpg";
+                        if (file_exists($fotoPath)) {
+                            echo '<img src="' . $fotoPath . '" width="150" height="180">';
+                        } else {
+                            echo '<img src="FotosPerfil/foto-porDefecto.png" width="250" height="180">';
+                        }
+                        ?>
+                        <!-- <img src="img/LogoUNJFSC.png" alt="" width="250"> -->
+                    </a></td>
+            </tr>
+            <tr>
+                <td>Nombre</td>
+                <td><?php echo $rPers["nombre"]; ?> </td>
+            </tr>
+            <tr>
+                <td>Apellidos</td>
+                <td><?php echo $rPers["apellido"]; ?></td>
+            </tr>
+            <td>Email:</td>
+            <td><?php echo $rPers["correo"]; ?></td>
+            <tr>
+                <td>Nro. DNI</td>
+                <td><?php echo $rPers["dni"]; ?></td>
+            </tr>
+            <tr>
+                <td>Edad</td>
+                <td><?php echo $rPers["edad"]; ?></td>
+            </tr>
+            <tr>
+                <td>Departamento:</td>
+                <td>
+                    Lima
+                </td>
+            </tr>
+            <td>Provincia :</td>
             <td>
-                Lima
-            </td>
-        </tr>
-        <td>Provincia :</td>
-        <td>
-            <?php
-            $sql = "SELECT dis.nombre AS nombre_distrito, prov.nombre AS nombre_provincia, tbpe.idDistrito
+                <?php
+                $sql = "SELECT dis.nombre AS nombre_distrito, prov.nombre AS nombre_provincia, tbpe.idDistrito
             FROM tbpersonaindividual tbpe
             JOIN tbdistrito dis ON tbpe.idDistrito = dis.idDistrito
             JOIN tbprovincia prov ON dis.idProvincia = prov.idProvincia
             WHERE tbpe.idPersona = $cod;
             ";
-            $f = mysqli_query($cn, $sql);
-            $r = mysqli_fetch_assoc($f);
-            ?>
-            <?php echo $r["nombre_provincia"]; ?>
-        </td>
-        <tr>
-            <td> Distrito</td>
-            <td>
-                <?php
-                $sql = "SELECT dis.nombre, tbpe.idDistrito
+                $f = mysqli_query($cn, $sql);
+                $r = mysqli_fetch_assoc($f);
+                ?>
+                <?php echo $r["nombre_provincia"]; ?>
+            </td>
+            <tr>
+                <td> Distrito</td>
+                <td>
+                    <?php
+                    $sql = "SELECT dis.nombre, tbpe.idDistrito
             FROM tbdistrito dis
             JOIN tbpersonaindividual tbpe ON dis.idDistrito = tbpe.idDistrito
             WHERE tbpe.idPersona = $cod;
             ";
-                $f = mysqli_query($cn, $sql);
-                $r = mysqli_fetch_assoc($f);
-                ?>
-                <?php echo $r["nombre"]; ?>
-            </td>
-        </tr>
-    </table>
-<?php } ?>
+                    $f = mysqli_query($cn, $sql);
+                    $r = mysqli_fetch_assoc($f);
+                    ?>
+                    <?php echo $r["nombre"]; ?>
+                </td>
+            </tr>
+        </table>
+    <?php } ?>
 
-<a href="actualizar.php">Editar</a>
-<a href="imagenperfil.php">Cambiar foto</a>
+    <a href="actualizar.php">Editar</a>
+    <a href="imagenperfil.php">Cambiar foto</a>
+</body>
+
+</html>
 
 <?php
 include 'Include/footer.php'
