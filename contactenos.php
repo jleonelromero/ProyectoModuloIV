@@ -99,7 +99,7 @@
     </div>
 
     <div class="container">
-    <form action="#" method="post">
+    <form action="p_contactenos.php" method="post">
         <label for="nombre">Nombre:</label>
         <input type="text" id="nombre" name="nombre" required>
 
