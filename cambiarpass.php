@@ -19,6 +19,7 @@ $r = mysqli_fetch_assoc($f);
 </head>
 
 <body>
+    <br><br>
     <h2>Cambio de Contraseña</h2>
     <form action="p_cambiarpass.php" method="post">
         <label>Correo Electrónico :</label>
