@@ -12,7 +12,7 @@ include 'Include/cabecera.php'
         body {
             font-family: 'Arial', sans-serif;
             background-color: #f4f4f4;
-            margin: 0;
+            margin-top: 180px;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -85,11 +85,7 @@ include 'Include/cabecera.php'
             background-color: #45a049;
         }
     </style>
-</head>
-<body>
-<br><br><br>
-<br><br>
-<br><br>
+
 <div class="container">
     <h1>Contáctenos</h1>
 
