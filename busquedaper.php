@@ -1,7 +1,7 @@
 <?php
 
 include("Include/conexion.php");
-include("Include/cabecera.php");
+include("Include/cabecera.php"); 
 
 ?>
 <!DOCTYPE html>
