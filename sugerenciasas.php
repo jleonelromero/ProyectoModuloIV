@@ -38,23 +38,45 @@ foreach ($data as $objetivo) {
 ?>
 
 
+
 <?php
-foreach ($data as $objetivo) {
-    echo "<tr>";
-    echo "<td rowspan='" . count($objetivo['resultados']) . "'>" . $objetivo['objetivo'] . "</td>";
-    $firstResult = true;
-    foreach ($objetivo['resultados'] as $resultado) {
-        if (!$firstResult) {
-            echo "<tr>";
-        }
-        echo "<td>" . $resultado['resultado'] . "</td>";
-        echo "<td></td>";
-        echo "<td></td>";
-        echo "</tr>";
-        $firstResult = false;
-    }
-}
-?>
+
+		$totalRows = 0;
+		foreach ($data as $objetivo) {
+			foreach ($objetivo['resultados'] as $resultado) {
+				foreach ($resultado['politicas'] as $politica => $medidas) {
+					$totalRows += count($medidas);
+				}
+			}
+		}
+		foreach ($data as $objetivo) {
+			$firstObjetivo = true;
+			foreach ($objetivo['resultados'] as $resultado) {
+				$firstResult = true;
+				foreach ($resultado['politicas'] as $politica => $medidas) {
+					echo "<tr>";
+					if ($firstObjetivo) {
+						echo "<td rowspan='$totalRows'>" . $objetivo['objetivo'] . "</td>";
+						$firstObjetivo = false;
+					}
+					if ($firstResult) {
+						echo "<td rowspan='" . count($resultado['politicas']) . "'>" . $resultado['resultado'] . "</td>";
+						$firstResult = false;
+					}
+					echo "<td>$politica:</td>";
+					echo "<td>";
+					echo "<ul>";
+					foreach ($medidas as $medida) {
+						echo "<li>$medida</li>";
+					}
+					echo "</ul>";
+					echo "</td>";
+					echo "</tr>";
+				}
+			}
+		}
+		?>
+
 
 <?php
 foreach ($data as $objetivo) {
@@ -66,16 +88,7 @@ foreach ($data as $objetivo) {
             echo "<tr>";
         }
         echo "<td>" . $resultado['resultado'] . "</td>";
-        echo "<td>";
-        $firstPolitica = true;
-        foreach ($resultado['politicas'] as $politica => $medidas) {
-            if (!$firstPolitica) {
-                echo "<br>";
-            }
-            echo $politica . ": " . implode(", ", $medidas);
-            $firstPolitica = false;
-        }
-        echo "</td>";
+        echo "<td></td>";
         echo "<td></td>";
         echo "</tr>";
         $firstResult = false;

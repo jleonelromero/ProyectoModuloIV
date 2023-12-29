@@ -1,4 +1,4 @@
 function mostrarTabla(id) {
     var idObjetivo = id;
-    window.location.href = "sugerencias.php?idObjetivo=" + idObjetivo;
+    window.location.href = "matriz.php?idObjetivo=" + idObjetivo;
 }
