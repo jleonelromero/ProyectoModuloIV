@@ -1,6 +1,6 @@
 <?php
 include 'Include/conexion.php';
-include'Include/cabecera.php';
+include 'Include/cabecera.php';
 $cod = $_SESSION["usuario"];
 $sqlInstitucion = "SELECT * FROM tbinstitucioneducativa WHERE idInstitucionEducativa = '$cod'";
 $fInst = mysqli_query($cn, $sqlInstitucion);
@@ -14,15 +14,11 @@ if ($rInst) {
     $tabla = "PersonaIndividual";
 }
 
-?>
-
-
-<?php if ($tabla === "InstitucionEducativa") { ?>
-
+if ($tabla === "InstitucionEducativa") { ?>
     <table border="2">
         <tr>
             <td rowspan="11"> <a href="">
-                <?php
+                    <?php
                     $fotoPath = "FotosPerfil/" . $rInst["idInstitucionEducativa"] . ".jpg";
                     if (file_exists($fotoPath)) {
                         echo '<img src="' . $fotoPath . '" width="150" height="180">';
@@ -30,7 +26,7 @@ if ($rInst) {
                         echo '<img src="FotosPerfil/foto-porDefecto.png" width="150" height="180">';
                     }
                     ?>
-            </a></td>
+                </a></td>
         </tr>
         <tr>
             <td>Codigo de la I.E</td>
@@ -39,11 +35,10 @@ if ($rInst) {
         </tr>
         <tr>
             <td>Nombre de la Institución Educativa</td>
-        <td><?php echo $rInst["nombre"]; ?></td>
-    </tr>
+            <td><?php echo $rInst["nombre"]; ?></td>
+        </tr>
         <td>Email:</td>
         <td><?php echo $rInst["correo"]; ?></td>
-       
         <tr>
             <td>Director(a) Responsable</td>
             <td><?php echo $rInst["direcResponsable"]; ?></td>
@@ -68,7 +63,7 @@ if ($rInst) {
         </tr>
         <td>Provincia :</td>
         <td>
-        <?php
+            <?php
             $sql = "SELECT dis.nombre AS nombre_distrito, prov.nombre AS nombre_provincia, tbpe.idDistrito
             FROM tbinstitucioneducativa tbpe
             JOIN tbdistrito dis ON tbpe.idDistrito = dis.idDistrito
@@ -76,40 +71,31 @@ if ($rInst) {
             WHERE tbpe.idInstitucionEducativa = $cod;
             ";
             $f = mysqli_query($cn, $sql);
-$r=mysqli_fetch_assoc($f);
-
-            ?>    
+            $r = mysqli_fetch_assoc($f);
+            ?>
             <?php echo $r["nombre_provincia"]; ?>
         </td>
         <tr>
             <td> Distrito</td>
-        <td>
-        <?php
-            $sql = "SELECT dis.nombre, tbpe.idDistrito
+            <td>
+                <?php
+                $sql = "SELECT dis.nombre, tbpe.idDistrito
             FROM tbdistrito dis
             JOIN tbinstitucioneducativa tbpe ON dis.idDistrito = tbpe.idDistrito
             WHERE tbpe.idInstitucionEducativa = $cod;
             ";
-            $f = mysqli_query($cn, $sql);
-$r=mysqli_fetch_assoc($f);
-
-            ?>    
-            <?php echo $r["nombre"]; ?>
-        </td>
+                $f = mysqli_query($cn, $sql);
+                $r = mysqli_fetch_assoc($f);
+                ?>
+                <?php echo $r["nombre"]; ?>
+            </td>
         </tr>
     </table>
-
-
-
-    <?php } elseif ($tabla === "PersonaIndividual") { ?>
-
-
-
-
-        <table border="2">
+<?php } elseif ($tabla === "PersonaIndividual") { ?>
+    <table border="2">
         <tr>
             <td rowspan="10"> <a href="">
-            <?php
+                    <?php
                     $fotoPath = "FotosPerfil/" . $rPers["idPersona"] . ".jpg";
                     if (file_exists($fotoPath)) {
                         echo '<img src="' . $fotoPath . '" width="150" height="180">';
@@ -117,8 +103,8 @@ $r=mysqli_fetch_assoc($f);
                         echo '<img src="FotosPerfil/foto-porDefecto.png" width="250" height="180">';
                     }
                     ?>
-                <!-- <img src="img/LogoUNJFSC.png" alt="" width="250"> -->
-            </a></td>
+                    <!-- <img src="img/LogoUNJFSC.png" alt="" width="250"> -->
+                </a></td>
         </tr>
         <tr>
             <td>Nombre</td>
@@ -126,8 +112,8 @@ $r=mysqli_fetch_assoc($f);
         </tr>
         <tr>
             <td>Apellidos</td>
-        <td><?php echo $rPers["apellido"]; ?></td>
-    </tr>
+            <td><?php echo $rPers["apellido"]; ?></td>
+        </tr>
         <td>Email:</td>
         <td><?php echo $rPers["correo"]; ?></td>
         <tr>
@@ -146,7 +132,7 @@ $r=mysqli_fetch_assoc($f);
         </tr>
         <td>Provincia :</td>
         <td>
-        <?php
+            <?php
             $sql = "SELECT dis.nombre AS nombre_distrito, prov.nombre AS nombre_provincia, tbpe.idDistrito
             FROM tbpersonaindividual tbpe
             JOIN tbdistrito dis ON tbpe.idDistrito = dis.idDistrito
@@ -154,55 +140,31 @@ $r=mysqli_fetch_assoc($f);
             WHERE tbpe.idPersona = $cod;
             ";
             $f = mysqli_query($cn, $sql);
-$r=mysqli_fetch_assoc($f);
-
-            ?>    
+            $r = mysqli_fetch_assoc($f);
+            ?>
             <?php echo $r["nombre_provincia"]; ?>
         </td>
         <tr>
             <td> Distrito</td>
-        <td>
-        <?php
-            $sql = "SELECT dis.nombre, tbpe.idDistrito
+            <td>
+                <?php
+                $sql = "SELECT dis.nombre, tbpe.idDistrito
             FROM tbdistrito dis
             JOIN tbpersonaindividual tbpe ON dis.idDistrito = tbpe.idDistrito
             WHERE tbpe.idPersona = $cod;
             ";
-            $f = mysqli_query($cn, $sql);
-$r=mysqli_fetch_assoc($f);
-
-            ?>    
-            <?php echo $r["nombre"]; ?>
-        </td>
+                $f = mysqli_query($cn, $sql);
+                $r = mysqli_fetch_assoc($f);
+                ?>
+                <?php echo $r["nombre"]; ?>
+            </td>
         </tr>
     </table>
-    <?php } ?>
+<?php } ?>
 
-
-
-
-
-
-
-
-
-
-
-    <a href="actualizar.php">Editar</a>
-    <a href="imagenperfil.php">Cambiar foto</a>
-
-
-
-
-
-
-
-
-
-
-
+<a href="actualizar.php">Editar</a>
+<a href="imagenperfil.php">Cambiar foto</a>
 
 <?php
-
 include 'Include/footer.php'
 ?>
