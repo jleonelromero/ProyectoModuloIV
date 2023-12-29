@@ -1,5 +1,7 @@
 <?php
 include("Include/conexion.php");
+include("Include/cabecera.php");
+
 
 
 
@@ -85,7 +87,7 @@ $arreglo = $r['idcon'] . ',' . $r['nombre'] . ',' . $r['correo'];
 
  <td>
 
- <button type="button" class="btn btn-outline-success"  data-bs-toggle="modal" data-bs-target="#responder" onclick="modificar('<?php echo $arreglo?>')">Modificar</button>
+ <button type="button" class="btn btn-outline-success"  data-bs-toggle="modal" data-bs-target="#responder" onclick="modificar('<?php echo $arreglo?>')">Responder</button>
 
 
  </td>
@@ -153,3 +155,12 @@ $arreglo = $r['idcon'] . ',' . $r['nombre'] . ',' . $r['correo'];
 
 
 <script type="text/javascript"  src="js/funciones2.js"> </script>
+
+<?php
+include("Include/footer.php");
+
+
+
+
+
+?>
