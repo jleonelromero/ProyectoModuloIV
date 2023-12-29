@@ -81,6 +81,7 @@ $rol = ($r["nombre"]);
                         <div class="user-menu dropdown-menu">
                             <?php if ($rol === 'Admin') { ?>
                                 <a class="nav-link" href='matriz.php'><i class="fas fa-bullseye"></i> Objetivos</a>
+                                <a class="nav-link" href='consolidado.php'><i class="fas fa-chart-bar"></i> Consolidado</a>
                                 <a class="nav-link" href='reporte.php'><i class="fas fa-users"></i> Reportes - Personas</a>
                                 <a class="nav-link" href='reporte.php'><i class="fas fa-users"></i>Reportes - I.E</a>
                                 <a class="nav-link" href='reportescontac.php'><i class="fas fa-users"></i>Reportes contactos</a>
