@@ -10,23 +10,31 @@
             background-color: #f4f4f4;
             margin: 0;
             display: flex;
-            justify-content: center;
-            align-items: center;
+            flex-direction: column; /* Cambio a dirección de columna */
             height: 100vh;
         }
 
         .container {
             text-align: left;
+            max-width: 600px;
+            width: 100%;
+            margin: auto; /* Añadido para centrar el contenedor en la página */
+        }
+
+        .header {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px;
+            max-width: 800px;
+            margin: auto;
         }
 
         form {
             background-color: #fff;
             padding: 20px;
-            border-radius: 8px;
+            border-radius: 0 0 8px 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            max-width: 400px;
-            width: 100%;
-            margin-top: 20px; /* Ajusta el margen entre el título y el formulario */
+            margin-top: 20px;
         }
 
         h1 {
@@ -40,7 +48,8 @@
         }
 
         input,
-        select {
+        select,
+        textarea {
             width: 100%;
             padding: 8px;
             margin-bottom: 16px;
@@ -84,9 +93,12 @@
 </head>
 <body>
 
-<div class="container">
-    <h1>Contáctenos</h1>
 
+    <div class="header">
+        <h1>Contactenos</h1>
+    </div>
+
+    <div class="container">
     <form action="#" method="post">
         <label for="nombre">Nombre:</label>
         <input type="text" id="nombre" name="nombre" required>
@@ -109,6 +121,9 @@
             <option value="sugerencia">Sugerencia</option>
             <option value="otros">Otros</option>
         </select>
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
 
         <div class="checkbox-container">
             <input type="checkbox" name="consentimiento" id="consentimiento" required>
