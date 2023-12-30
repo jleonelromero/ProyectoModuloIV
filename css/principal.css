@@ -1,0 +1,44 @@
+header {
+    background-color: #c98828;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+#inicio {
+    text-align: center;
+    padding: 50px;
+}
+
+#inicio h2 {
+    font-size: 2em;
+    color: #e28c09;
+}
+
+#inicio p {
+    font-size: 1.2em;
+    color: #333;
+}
+
+.swal2-popup {
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+.image-slider {
+    overflow: hidden;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.slider-item {
+    width: 250px;
+    height: 250px;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 10px;
+}

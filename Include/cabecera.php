@@ -84,10 +84,8 @@ $rol = ($r["nombre"]);
                                 <a class="nav-link" href='consolidado.php'><i class="fas fa-chart-bar"></i> Consolidado</a>
                                 <a class="nav-link" href='reporte_persona.php'><i class="fas fa-users"></i> Reportes - Personas</a>
                                 <a class="nav-link" href='reporte_institucion.php'><i class="fas fa-users"></i>Reportes - I.E</a>
-                                <a class="nav-link" href='reportescontac.php'><i class="fas fa-users"></i>Reportes contactos</a>
-
                                 <a class="nav-link" href='busqueda.php'><i class="fas fa-search"></i> Búsquedas - I.E</a>
-                                <a class="nav-link" href='busqueda.php'><i class="fas fa-search"></i> Búsquedas - Personas</a>
+                                <a class="nav-link" href='busquedaper.php'><i class="fas fa-search"></i> Búsquedas - Personas</a>
 
                                 <a class="nav-link" href="cerrarsesion.php"><i class="fa-solid fa-right-from-bracket"></i>Cerrar sesion </a>
                             <?php } else { ?>
